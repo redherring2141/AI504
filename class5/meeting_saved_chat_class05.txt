@@ -1,0 +1,43 @@
+10:32:11	 From 20185051 김소정 : 안녕하세요~
+10:32:45	 From jaegyunkim : Good morning!
+10:33:19	 From Andrés Brito : Good morning
+10:33:40	 From youngjunchoi : Good morning yall
+10:34:47	 From jaegyunkim : Do we have a class on thursday?
+10:51:11	 From 20203389 유명성 : perturbing z가 novel한 샘플을 못 만들면 GAE는 어디에 주로 활용하나요?
+10:51:50	 From Yonghee Kim : generative autoencoder
+10:51:53	 From 20203389 유명성 : 그 샘플 만드는 오토인코더요
+10:53:13	 From 20203389 유명성 : 아 넵 감사합니다
+11:03:07	 From 이성준 : 분자는 다룰만 한건가요?
+11:04:33	 From 박영서 : Q(Z)로 근사하는 수학적인 근거가 있는건가요? 아니면 단지 계산을 수월하게 하기 위한 건가요?
+11:06:21	 From 박영서 : 감사합니다.
+11:07:31	 From Rushda Basir : Why cant we assume any simpler distribution for P(X)?
+11:08:59	 From Rushda Basir : ok. Thankyou.
+11:13:54	 From jaegyunkim : 왜 reverse KL을 사용하는건가요?
+11:16:46	 From jaegyunkim : 더 날카롭게 Q를 설정하기 위함이라고 이해해도 되나요?
+11:18:46	 From 20204294_김주형 : forward KL을 사용하면 unknown p에서 sampling을 해야하는건가요?
+11:21:42	 From 20204294_김주형 : 앗 이해했습니다. 감사합니다!!
+11:26:41	 From 20185051 SoJung : yes
+11:26:42	 From jaegyunkim : yes
+11:32:35	 From 20205503 Kyeonghyeon Park : p(x,z)에 대한 integration이 어려워서 Bayesian principle을 이용하지 못한다 하셨는데 L(Q)에 log P(x,z)에 대한 expectation이 있는데 more tractable한 이유가 무엇인지요?
+11:36:57	 From 20205503 Kyeonghyeon Park : thank you
+11:37:10	 From 박영서 : KL(q(z|xi)||p(z))에서 p(z)가 Gaussian라고 가정했으니 encoder q(z|xi)가 p(z)를 따르도록 학습시키는 것으로 이해하면 되나요?
+11:40:41	 From 박영서 : 감사합니다!
+11:47:05	 From 20208207 Soyoung Yang : in your written equation, in ELBO phrase, + -> -
+11:50:57	 From 20208207 Soyoung Yang : 오른쪽 위요!
+11:51:09	 From 20208207 Soyoung Yang : 아 안에
+11:51:10	 From 20208207 Soyoung Yang : 네네
+12:16:27	 From Jihwan Joo : 감사합니다.
+12:16:33	 From Andrés Brito : Thank you
+12:18:08	 From 박영서 : 서로 다른 distribution에 대해서 KL-divergence 말고 다른 divergence를 사용하는 경우가 있나요? 마지막에 나온 beta-VAE나 TC-VAE가 다른 divergence를 사용하나요?
+12:19:18	 From 박영서 : 감사합니다.
+12:19:51	 From Rushda Basir : how is epsilon realized during coding?
+12:20:36	 From Rushda Basir : ok . Thankyou
+12:20:45	 From Jong Hak Moon to Yoonjae Choi (Privately) : 오늘도 감사합니다!
+12:21:02	 From 20185051 SoJung : 감사합니다~!!
+12:21:07	 From 20205342 조성윤 : 추석 잘보내세요
+12:21:12	 From 20204597 최환일 : 감사합니다 ~
+12:21:13	 From 20204225 강정모 : 감사합니다
+12:21:17	 From 박영서 : 감사합니다.
+12:21:18	 From 심상민 (20203347) : Thank you! 
+12:21:19	 From Daniel Saatchi : Thank you
+12:21:21	 From 20203181 김현성 : 감사합니다

@@ -1,0 +1,144 @@
+10:34:47	 시작  20203043_김경현 : Mute please
+10:35:19	 시작  20203344 신현호 : 학생들 뮤트 부탁드립니다
+10:35:19	 시작  20185051 SoJung : 안녕하세요~
+10:35:20	 시작  20185051 SoJung : 넵ㅎㅎㅎ
+10:35:20	 시작  이재완 : yes
+10:35:21	 시작  Seongsu Bae : Yes
+10:35:27	 시작  Jihwan Joo : 예.
+10:35:56	 시작  20185051 SoJung : 마이크가 살짝 울리는데, 혹시 말씀하실 때 마이크 간격 조금 변경해주실 수 있을까요?
+10:36:19	 시작  20185051 SoJung : 좋습니다!
+10:36:21	 시작  20185051 SoJung : 감사합니다ㅎㅎ
+10:40:16	 시작  ed : Please take up to 10 minutes to build your own auto encoders.
+10:40:20	 시작  20205503 Kyeonghyeon Park : classification을 위한 MLP에서는 마지막 layer에 activation function을 취하지 않았던 것 같은데 
+이번 모델에서는 decoder 마지막 부분에 activation function을 취하는 이유가 있을까요?
+10:40:28	 시작  Rushda Basir : what does mnist_train[0][0] represent? I mean the indices?
+10:41:54	 시작  20205503 Kyeonghyeon Park : 감사합니다
+10:41:57	 시작  ed : As you can see now, they are 28 x 28 pixel values normalized to range 0~1.
+10:42:50	 시작  20208220 이원준 : Ans?
+10:43:38	 시작  Rushda Basir : can we use different activation functions for encoder and decoder?
+10:44:16	 시작  ed : Yep you can try any combination you like.
+10:44:26	 시작  Rushda Basir : thankyou
+10:44:46	 시작  Seongsu Bae : I made own Autoencoder! Is there a way to make sure my forward works?
+10:44:49	 시작  ed : But the final activation function in your decoder should be a sigmoid function to ensure your reconstruction has values between 0~1.
+10:45:22	 시작  ed : You can put your input through your autoencoder and see if the output has the size (batch_size * 28 * 28)
+10:45:52	 시작  Seongsu Bae : Thank you!
+10:48:03	 시작  20208220 이원준 : Why only the last activation function is Sigmoid?
+10:48:18	 시작  20205525 설유선 : What does the 'self' work for when you define the function?
+10:48:39	 시작  20208220 이원준 : defined automatically when it is written in code
+10:49:20	 시작  20205525 설유선 : 감사합니다
+10:49:39	 시작  20185051 SoJung : -1 대신 batch_size 써도 되나요?
+10:50:11	 시작  jaegyunkim : batch_size = x.size(0)
+10:50:12	 시작  Rushda Basir : what is batch size doing?
+10:50:25	 시작  20198221 : x.view(-1,1)이 아닌 x.view(-1,28*28)인 이유가 무엇인가요?
+10:50:37	 시작  Rushda Basir : why cant we use x.view alone I mean?
+10:50:43	 시작  20185051 SoJung : 넵! 감사합니다
+10:50:57	 시작  51560 김성민 (청강생) : batch size를 250처럼 딱 떨어지는 수가 아닌 256으로 하는건 관습적인건가요? 아니면 어떤 이유가 있나요?
+10:51:49	 시작  최환일(20204597) : x.size(0)로 매번 batch_size를 가져와서 상관없지않나요?
+10:52:13	 시작  20198221 : 네 감사합니다
+10:52:15	 시작  jaegyunkim : 환일님, 맞는것 같습니다.
+10:52:58	 시작  20208220 이원준 : ok
+10:53:30	 시작  20205525 설유선 : 네!
+10:53:52	 시작  20205525 설유선 : 감사합니다
+10:58:02	 시작  Rushda Basir : why do we set gradients zero beforehand?
+10:59:03	 시작  jaegyunkim : 조교님, model = Autoencoder().to(device)
+이쪽 코드한번만 보여주실수 있으신가요? TypeError: forward() missing 1 required positional argument: 'input' 이 에러가 나서요..
+10:59:31	 시작  ed : We’ve covered that in practice 3. If you don’t zero the grad, then the gradient values will be accumulated in your variable’s member variable “grad".
+10:59:53	 시작  jaegyunkim : 네 맞습니다.
+10:59:53	 시작  Rushda Basir : oh yes. Thankyou
+10:59:55	 시작  20185051 SoJung : best_val_loss = 100000000이부분이 무슨 뜻인지 이해 못했습니다.
+10:59:59	 시작  jaegyunkim : 일단 조교님 코드로 동일하게 해야겠네요.
+11:00:36	 시작  20185051 SoJung : 아! 넵ㅎㅎㅎ 감사합니다!
+11:01:13	 시작  20185051 SoJung : 감사합니다!
+11:01:34	 시작  20205503 Kyeonghyeon Park : float("inf") 등으로 best_val_loss를 initialize하는 방법도 있을 것 같습니다
+11:01:40	 시작  Rushda Basir : why do we initialize best_val_loss = 100000000?
+11:02:03	 시작  ed : We are just setting the initial val_loss to an arbitrarily large value
+11:02:14	 시작  Rushda Basir : ok
+11:02:26	 시작  ed : So that you can save the best performing model whenever the validation loss is below 10000000.
+11:06:41	 시작  20203210_Jiyoon_Myung : inputs.to(device)대신에 inputs.cuda()를 사용해도 되나요?
+11:07:00	 시작  ed : Yep that works too.
+11:07:52	 시작  Hyeonjun Choi : 위에 코드 한번만 더 보여주시면 안될까요?
+11:07:56	 시작  20205440 (Will)mer Quiñones : '.to(device)' ensures you either work on cpu or gpu tho. If you don't have GPU, '.cuda()' would yield an error, I think
+11:07:57	 시작  20204471 이승준 : 방금 작성한 코드부분 다시한번만 보여주실 수 있을까요?
+11:08:06	 시작  20205503 Kyeonghyeon Park : 조교님 잠시 화면을 놓쳤는데
+if phase == 'train':
+    loss.backward()
+    optimizer.step()
+
+11:08:08	 시작  20205503 Kyeonghyeon Park : 맞나요?
+11:08:24	 시작  이성준 : 네
+11:08:26	 시작  20205503 Kyeonghyeon Park : 네 감사합니다
+11:09:15	 시작  20185051 SoJung : # Set model to evaluate mode이부분 한번만 다시 보여주세요ㅡ
+11:09:16	 시작  20185051 SoJung : ㅜㅜ
+11:09:19	 시작  20193321 신은택 : model.train() 은 nn.Module에 내장되어 있는 건가요?
+11:10:11	 시작  20185051 SoJung : 감사합니다!
+11:11:00	 시작  20208220 이원준 : RuntimeError: CUDA error: an illegal memory access was encountered < 이거 어떻게 해결할 수 있나요?
+11:11:21	 시작  jjeong : runtime restart 해보세요
+11:12:36	 시작  jaegyunkim : 혹시 추후에, dataloader를 stream으로 업로드해서 돌리는 것도 연습 세션에서 다뤄주실수 있으신가요?
+11:13:37	 시작  영준 곽 : 학습할때 cross entropy, mse 로 loss를 구할때
+11:13:58	 시작  영준 곽 : 어느정도 작은 수가 되야 수렴했다고 할 수 있나요?
+11:16:02	 시작  영준 곽 : 감사합니다
+11:17:11	 시작  이성준 : 기다리는 동안, 이전 코드 블랭크 부분 보여주세요
+11:17:28	 시작  이성준 : optimizer
+11:17:47	 시작  20208220 이원준  종료  Yoonjae Choi(비공개로) : Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! 이렇게 뜨는데 혹시 이유가 뭔지 아시나요.. to(device) input말고 또 되있는 부분이 있나요?
+11:17:54	 시작  51560 김성민 (청강생) : model부분 코드 혹시 다시볼수있을까요?
+11:18:02	 시작  20205440 (Will)mer Quiñones : did you reshape the output in your Autoencoder() class? Because I had to reshape the 'inputs' in my training function; like this:inputs = inputs.view(-1, 28*28)
+11:18:13	 시작  20205440 (Will)mer Quiñones : oh nvm, I see it now
+11:18:37	 시작  이성준 : 실행 부분도 뭔가 채워야 하나요
+11:18:49	 시작  영준 곽 : 러닝레잇이 cross entropy 했던 때보다 10배정도 더 작은데 ae는 작은 러닝레이슬 써야하나요. 아니면 mse로 로스를 써서 그런건가요?
+11:18:58	 시작  이성준 : loss func, optimizer 다 채웠는데
+11:19:02	 시작  20208220 이원준  종료  Yoonjae Choi(비공개로) : input.to(device)말고 to(device)쓰는 부분이 또 있나요?
+11:19:04	 시작  이성준 : 실행하면 오류가 나서요
+11:19:08	 시작  yongdae kim : validation loss하고 train loss하고 상관관계가 있는것 같은데 그럼 train loss만으로 model train이 잘되었는지 판단해도 되는것 아닌가요? 굳이 validation loss가 필요한가요?? 
+11:19:21	 시작  20208220 이원준  종료  Yoonjae Choi(비공개로) : RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! 이런 에러가 떠서요
+11:19:32	 시작  영준 곽 : 감사합니다
+11:20:02	 시작  Hyunju Lee : 혹시 encoder에서는 activation function으로 모두 ReLU를 사용하고, decoder에서는 마지막에 Sigmoid를 사용하는 특별한 이유가 있나요?
+11:20:22	 시작  yongdae kim : 네 감사합니다!
+11:21:03	 시작  20208220 이원준  종료  Yoonjae Choi(비공개로) : 그대로 따라했어요
+11:21:10	 시작  20208220 이원준  종료  Yoonjae Choi(비공개로) : colab쓰고 있어요
+11:21:18	 시작  jjeong : restart runtime 하면 됩니다
+11:21:25	 시작  20208220 이원준  종료  Yoonjae Choi(비공개로) : 그거도 해봤는데..
+11:21:42	 시작  20185051 SoJung : 저도 그랬는데, 껐다 다시 켜니까 됐었어요..ㅎㅎ;;
+11:22:46	 시작  Hyunju Lee : 감사합니다!
+11:24:36	 시작  20203210_Jiyoon_Myung : mse_loss 계산할때 Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! 라는 에러가뜨는데 혹시 문제가 뭔지 아시는 분 있나요?
+11:25:26	 시작  ed : @Jiyoon: Try “tensor = tensor.to(device=torch.device("cuda:0”))”
+11:25:49	 시작  20203210_Jiyoon_Myung : 저 줄을 그냥 입력하면 되는건가요?
+11:26:08	 시작  20185051 SoJung : 네네 윗줄에 있는데, 실행 안하신거 같아요
+11:26:47	 시작  ed : I just googled your error message and found and answer on “https://github.com/espnet/espnet/issues/2282”
+11:27:48	 시작  20203210_Jiyoon_Myung : 감사합니다
+11:29:40	 시작  양동헌 : TSNE가 데이터를 거리기반으로 다시 임베딩한다고 알고있는데 저렇게 학습된 피쳐스페이스를 비쥬얼라이징할때 합리적이다고 할수 있을까요 ?
+11:30:11	 시작  양동헌 : 예를 들어서 인코더 아웃풋을 2차원까지 줄여서 비쥬얼라이징한것이랑 TSNE랑 결과가 같나요 ? 궁금합니다.
+11:34:00	 시작  양동헌 : 감사합니다.
+11:37:24	 시작  김윤영 : 오늘 실습한 코드 빈칸 채운 버전으로 다시 올려주시나요?
+11:37:39	 시작  김윤영 : 네 감사합니다
+11:38:49	 시작  최영준 (20204581) : inputs += noise 이렇게 해도 괜찮나요?
+11:39:13	 시작  최영준 (20204581) : 아하
+11:39:20	 시작  jaegyunkim : ! 그렇네요
+11:41:59	 시작  Rushda Basir : do we need to transfer noise to GPU? 
+11:42:12	 시작  M-2019-4421 백유미 : noise추가한 코드 다시 보여주실 수 있으신지요? 그리고 따로 noise자체를 inputs 에 추가하지 않고 코드 내에서 선언하는 이유 다시 한번 설명해 주실 수 있으신지요?
+11:42:12	 시작  Rushda Basir : Thankyou
+11:42:31	 시작  20185051 SoJung : validation은 noise 없는걸로 체크해야 돼서 그런거 같아요
+11:43:45	 시작  20205503 Kyeonghyeon Park : noise_inputs = noise + inputs로 하셨는데 GPU에 upload한 variable끼리 더하면 여전히 GPU에 upload되어있나요?
+11:43:45	 시작  박성진 (20204341) : 교수님. 지금처럼 노이즈를 매 샘플마다 넣는것과 ,  랜덤샘플마다 노이즈를 넣는것과 어떤것이 더 성능에 좋은가요?
+11:43:46	 시작  M-2019-4421 백유미 : random noise를 넣는 이유는 overfitting을 없애려고 하나요?
+11:46:17	 시작  석원 이 : random noise를 넣는 건 다른 딥러닝 모델들에도 모두 적용되는 건가요?
+11:46:24	 시작  M-2019-4421 백유미 : 감사합니다.
+11:47:19	 시작  석원 이 : 감사합니다
+11:48:03	 시작  Wonhong Yoo : train loss가 validation loss보다 높은 결과를 어떻게 해석할 수 있나요? 모델이 validation은 못 보고 train 데이터로 학습했기 때문에 보통 train loss가 더 작아야 하지 않나요?
+11:48:14	 시작  최영준 (20204581) : Noise를 넣는 것을 추가로 gray값을 입힌다고 이해해도 괜찮을까요?
+11:49:57	 시작  최영준 (20204581) : 아하 노이즈를 통해 기존의 픽셀값에 아주 작은 변화를 주는 것이죠?
+11:50:08	 시작  20185051 SoJung : plot할 때 0보다 작거나 1보다 큰 데이터가 있어도 상관없는건가요?
+11:50:16	 시작  Daniel Saatchi : Would you please upload the final .ipynb file in the chatbox?
+11:50:25	 시작  최영준 (20204581) : 넵 재밌네요 고맙습니다 :)
+11:50:52	 시작  Wonhong Yoo : 네 감사합니다
+11:51:05	 시작  영준 곽 : 노이즈를 넣을때 [0,1] 노말하기 전에 넣는것과 [0,1] 노말 후 ( 지금처럼 ) 하는거랑 차이가 있을까요?
+11:51:16	 시작  20185051 SoJung : 네네 지금 떠있는 그림이요
+11:51:56	 시작  20185051 SoJung : 감사합니다!
+11:56:30	 시작  20185051 SoJung : 수업 재밌었습니다ㅎㅎㅎ 감사합니다!
+11:56:31	 시작  20204455 이명진 : 감사합니다~!!
+11:56:32	 시작  이재완 : 감사합니다
+11:56:34	 시작  Rushda Basir : Thankyou!
+11:56:35	 시작  문종학 : 감사합니다
+11:56:37	 시작  20205503 Kyeonghyeon Park : 감사합니다
+11:56:37	 시작  Seonyoung Kim : 수고하셨습니다
+11:56:37	 시작  Andrés Brito : Thank you
+11:56:39	 시작  20204871 YH Tan : Thank you!

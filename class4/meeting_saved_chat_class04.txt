@@ -1,0 +1,67 @@
+10:41:15	 발신자 20185051 SoJung : non linear
+10:41:22	 발신자 jinyoung (20208200) : non linear 
+10:41:22	 발신자 Rushda Basir : non linear
+10:41:23	 발신자 20208190 김형우 : Non-linear
+10:41:28	 발신자 JUNMIN LEE : non linear
+10:43:59	 발신자 Joshua Julio _20204805 : Please mute your mic
+10:44:02	 발신자 이원준 : 마이크 꺼주세요
+10:54:50	 발신자 20203199 남종석 : 저렇게 2D SPACE가 왜곡되는거는 activation function때문인거인가요?
+10:54:54	 발신자 20209007 최상범 : is there any relationship between classifying line's getting linear and overfitting?
+10:55:50	 발신자 20204618 황시환 : 2D 왜곡 activation fucntion 때문이라고 말씀하셨습니다!
+10:55:56	 발신자 20203199 남종석 : 감사합니다
+10:57:08	 발신자 20204871 YH Tan : is it like PCA? but PCA is for linear transformation
+10:58:47	 발신자 20204471 이승준 : What is the manifold learning? Could you explain it again?
+11:04:24	 발신자 Rushda Basir : is there any specific reason why mostly people prefer ReLU over sigmoid?
+11:12:51	 발신자 JUNMIN LEE : MSE?
+11:13:28	 발신자 Rushda Basir : negative log likehood
+11:15:16	 발신자 20198221 한건호 : the activation function f is the same both for encoding and decoding?
+11:19:23	 발신자 20208190 김형우 : Encoder와 decoder는 동일한 형태(layer 개수, dimension 등)를 갖는게 좋나요?
+11:21:01	 발신자 이재완 : x를 인코딩 시키기전에 0~1 사이로 만들어주는게 학습에 더 도움이되나요.?
+11:25:42	 발신자 이성준 : probably not에 대해 한번 더 설명해 주실 수 있을까요
+11:28:31	 발신자 20204618 황시환 : eigen vector 찾는거라고 생각하면 될까요?
+11:28:47	 발신자 20204618 황시환 : (@PCA)
+11:30:27	 발신자 석원 이 : > x를 인코딩 시키기전에 0~1 사이로 만들어주는게 학습에 더 도움이되나요.? 이 질문에 대한 답을 못 들었는데 한 번 더 말씀 가능할까요..?
+11:31:33	 발신자 20185051 SoJung : 예를들어 데이터가 100000, 1, -10000000000 이면 w 학습할 때 엄청 끝에 있는 숫자 까지 찾아봐야돼서 비효율 적입니다. 0~1 사이로 하는게 더 빠르게 찾는 방법이라고 하신 것 같습니다.
+11:31:48	 발신자 석원 이 : 감사합니다!
+11:34:42	 발신자 이성준 : 네
+11:46:27	 발신자 20203210_Jiyoon_Myung : N개의 epoch중에서 가장 loss가 작은 파라미터를 선택하는 건가요?
+11:47:20	 발신자 jaegyunkim : 네 validation data set으로 부터 발생한 loss가 가장 작은 모델(파라미터)를 선택하는 거예요.
+11:47:53	 발신자 20203210_Jiyoon_Myung : epoch이 진행될때 마다 학습이 진행되는건지 epoch 하나하나가 별개인지 궁금해서요
+11:49:20	 발신자 jaegyunkim : 1 epoch은 전체 데이터셋을 한번 다 훑었다고 생각하시면 돼요 batch는 전체 데이터셋을 나눠서 학습하는 것이구요 (한정된 메모리때문에)
+11:50:18	 발신자 20203210_Jiyoon_Myung : 네 그래서 epoch이 반복될떄마다 파라미터가 최적화되는것아닌가요? 그중에 고르는게 아니고
+11:51:32	 발신자 jaegyunkim : 같은 얘기인거 같아보여요..
+11:52:21	 발신자 jaegyunkim : 음… 아 학습되다가 loss가 발산할 가능성도 있어요
+11:52:24	 발신자 20203344 신현호 : 보통은 1 batch를 볼때마다 param을 조금씩 업데이트하는 것으로 알고 있습니다.
+11:52:44	 발신자 20203210_Jiyoon_Myung : 최적화되는것은 N번 epoch을 돈 뒤에 마지막 파라미터를 선택하는 걸 말한건데 중간에 가장 좋았던 파라미터를 선택한다는 말씀이시죠?
+11:53:49	 발신자 jaegyunkim : 파라미터를 모델 안에서 선택적으로 저장하는 것이 아니라 가장 best epoch 모델을 저장하는 것으로 알고 있어요
+11:53:50	 발신자 Rushda Basir : Each epoch is equal to performing iterations on the entire training dataset equal to mini-batch size?
+11:53:59	 발신자 박영서 : loss 출력해서 학습이 잘 되는지 확인하는데, validation/test performance는 그것과 다른 것인가요?
+11:55:07	 발신자 20203210_Jiyoon_Myung : 제가 따로 저장하지 않아도 자동으로 best epoch모델이 저장되는건가요?
+11:55:15	 발신자 Ju Yunsang : 학습은 backward가 호출될때 된다고 생각하시면 됩니다
+11:55:47	 발신자 Ju Yunsang : 최고의 val accuracy가 나온 epoch의 모델을 저장한다고 생각하시면됩니다
+11:55:57	 발신자 20203210_Jiyoon_Myung : 넵 감사합니다
+11:57:27	 발신자 Hyunju Lee : 저장이 저절로 되는건 아니고, 최고의 validation 성능이 나올 때에 직접 저장해줘야해요.
+11:57:37	 발신자 JUNMIN LEE : 예를 들어 100개의 데이터를 20의 batch size로 나누면 iteration은 5가 되고 5번의 iteration을 다 돌면 1 epoch입니다. 즉 100 epoch을 돌다가 95번째 epoch에서 모델의 accuracy, precision 등 어떠한 기준을 세웠을 때 그 기준 중 가장 높은 퍼포먼스가 training, val. set에서 나타났을 때 그 모델을 저장하고 쓰는것같습니다.
+11:58:53	 발신자 20203210_Jiyoon_Myung : 넵 저는 epoch이 5면 epoch을 도는동안 계속 최적화가 일어나고 마지막 모델을 쓰는 줄 알고 있었어서 질문드렸어요
+12:04:17	 발신자 박성진 (20204341) : 교수님. multiple dimension feature가 반영됬을때의 데이터 분포를 비교하고 싶어서 tsne로 볼때,  샘플 중 clustering되있지않고 다른 한쪽으로 찍히는 샘플 부분은 outlier로 보고 제거하는게 나은방향인가요?(train set의 일부만 그런 분포일때) 혹은 모델 입력 전 distance만 본것이니 참고하는 정도로만 생각하면 될지 궁금합니다~
+12:09:54	 발신자 석원 이 : When does denoising autoencoder perform better than vanilla autoencoder?
+12:11:26	 발신자 20203030 권욱현 : 감사합니다.
+12:11:30	 발신자 20203642_최상민 : 감사합니다!
+12:11:30	 발신자 jaegyunkim : 감사합니다
+12:11:32	 발신자 Andrés Brito : Thank you
+12:11:40	 발신자 20204225 강정모 : 감사합니다
+12:11:40	 발신자 20204618 황시환 : 감사합니다
+12:11:42	 발신자 M_2019_4421 백유미 : 감사합니다
+12:13:07	 발신자 Rushda Basir : How does sparse auto-encoder use Bernoulli distribution mean?
+12:13:38	 발신자 이재완 : pca 와 autoencoder 비교시 k 값이 작을때 오토인코더가 더 좋다고하신 이유를 설명해주실수 있으신가요?
+12:18:16	 발신자 20203162 김진호 : 교수님, 강의자료에서 visualize를 위해서 4dim -> 2dim으로 줄였는데요~ 만약 2dim으로 줄이기 전이 엄청 큰 차원(10000dim)이라도 가능한것인가요?
+12:20:26	 발신자 박성진 (20204341) : 동명이인입니다) 감사합니다.
+12:20:45	 발신자 석원 이 : 감사합니다
+12:22:00	 발신자 Rushda Basir : Thankyou Professor!
+12:23:24	 발신자 20203162 김진호 : 네 감사합니다 !!
+12:23:32	 발신자 20185051 SoJung : 감사합니다!
+12:23:32	 발신자 최영준 (20204581) : 감사합니다!
+12:23:34	 발신자 20204225 강정모 : 감사합니다
+12:23:35	 발신자 Woonghyeon Park : 감사합니다!
+12:23:36	 발신자 Jihwan Joo : 감사드립니다.
+12:23:36	 발신자 이재완 : 감사합니다

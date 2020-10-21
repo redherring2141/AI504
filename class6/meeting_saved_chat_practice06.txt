@@ -1,0 +1,84 @@
+10:35:48	 From Andrés Brito : Good morning
+10:36:00	 From 20194493이영준 : 조교님 소리가 들리지 않습니다.
+10:36:11	 From 20185051 SoJung : 저는 들립니다
+10:44:00	 From Ji : Do I arbitrarily decide the dimension for the latent space?
+10:44:35	 From Ji : Thanks
+10:47:50	 From Jihoon Tack (TA) : We will start solving at 11
+10:50:53	 From soro bedionita : if i want to have noise shape (1oo,) what should be the input shape for a linear layer?
+10:51:22	 From Ji : Which do I have to output for the discriminator,logits, or softmax? Not sure if BCELoss is implemented in similar way as CrossEntropyLoss (softmax + NLL)
+10:52:10	 From soro bedionita : ok
+10:53:54	 From Ji : so do not wrap the output with sigmoid?
+10:54:16	 From Ji : Thansk
+10:54:24	 From R Tev : I have an error at the very first line: NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running. 
+10:54:35	 From Rushda Basir : should we make values between -1 and +1 using tanh in generator?
+10:55:05	 From R Tev : +my NVIDIA driver is already recent. Can I ask you what other drivers should I installed?
+10:55:26	 From Rushda Basir : ok. Thanks
+10:55:34	 From Yoonjae Choi : @R Tev: If you are using Colab, please set the runtime to GPU
+10:55:34	 From M-2019-4421 백유미 : what is the training_progress_images in the def function?
+10:55:38	 From R Tev : colab
+10:55:56	 From R Tev : Thanks
+10:57:04	 From M-2019-4421 백유미 : Thanks~!
+11:00:45	 From Ji : are we not supposed to get label from the iteration     
+
+for i, (data, _) in enumerate(dataloader):
+
+11:02:26	 From 20209007 최상범 : what is the difference of fixed noise and just noise?
+11:02:42	 From Ji : Then what is the annotation for the # real label for??
+11:03:14	 From 20209007 최상범 : Thanks
+11:03:48	 From Ji : ooh okay haha
+11:03:51	 From Ji : thanks
+11:06:00	 From Ji : No need for dropouts or batchnorm?
+11:06:50	 From 이성준 : What is dropouts or ?
+11:07:46	 From 20185051 SoJung : don't we need nn.Sigmoid()?
+11:08:26	 From 이성준 : yes
+11:08:33	 From soro bedionita : I THOUGHT ONLY THE DISCRIMINATOR SHOULD HAVE THE SIGMOID
+11:08:43	 From 20205440 (Will)mer Quiñones : Dropout: https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/
+11:09:02	 From 20205440 (Will)mer Quiñones : https://www.youtube.com/watch?v=ARq74QuavAo
+11:09:28	 From soro bedionita : OK
+11:09:28	 From 20205440 (Will)mer Quiñones : the video has Korean sub :)
+11:10:00	 From Yoonjae Choi : Dropout summary: at each hidden layer, you randomly select x% of nodes and set their values to zero. This is a form of regularization.
+11:11:38	 From 20208220 이원준 : Can you scroll to 1.1
+11:12:32	 From 20208220 이원준 : Solved
+11:12:43	 From Rushda Basir : why do we need to change output shape?
+11:12:58	 From Rushda Basir : yes
+11:13:38	 From 이성준 : Is it possible, BCE(reduction=sum) without output shaping
+11:13:39	 From 이성준 : ?
+11:14:17	 From 이성준 : yes
+11:18:36	 From Ji : Why would you .detach() fake data?
+11:19:37	 From Ji : okay thanks
+11:19:41	 From 이성준 : .detach 없어도 실행은 되는 건가요?
+11:20:00	 From M-2019-4421 백유미 : What is netG, netD?
+11:20:19	 From 20185051 SoJung : netG = Generator().cuda()netD = Discriminator().cuda()
+11:20:24	 From Rushda Basir : can we use torch.full for generating labels?
+11:20:40	 From Ji : wrapt it on with torch.no_grad() on that line?
+11:21:12	 From R Tev : batch_size means the size of the image?
+11:22:08	 From R Tev : thanks
+11:25:22	 From 20185051 SoJung : 오른쪽에 그림 띄우는거 어떻게 하는건가요?
+11:25:50	 From 20185051 SoJung : 오...!! 감사합니다!
+11:25:56	 From Sungwon Kim : gradient ascending을 한다고 했는데요 해당 내용은 코드에 어떤 부분인가요??
+11:26:56	 From Rushda Basir : why do we use fixed noise?
+11:27:38	 From Rushda Basir : Thankyou
+11:28:12	 From Ji : It gives me error running the code for batch_size being 96 while output size being 128
+11:28:32	 From Ji : I think you should set drop_last option on for dataloader
+11:28:36	 From Ji : to True
+11:33:13	 From 20185051 SoJung : maximize 와 minimize는 코드상의 어떤 부분에서 구분이 가능한건가요?
+11:33:16	 From soro bedionita : is there reshape layer in pytorch such as in tensorflow?
+11:33:16	 From Sungwon Kim : loss 값에 -를 붙여서 backward(), step()을 호출하면 gradient descent가 되는건가요??
+11:34:14	 From 20185051 SoJung : no maximizing is right because of - sign
+11:34:43	 From 20185051 SoJung : 어떻게 maximizing하는건지를 이해하지 못했습니다
+11:37:03	 From 20185051 SoJung : 넵넵 근데 .step은 minimize하는거 아닌가요??
+11:37:24	 From 20185051 SoJung : 아..! 감사합니다!!
+11:39:14	 From 20205353 Hojun Jin : 감사합니다 
+11:39:14	 From 20185051 SoJung : 감사합니다~!
+11:39:15	 From Jihwan Joo : 감사합니다.
+11:39:15	 From 20203162 김진호 : 감사합니다
+11:39:16	 From 20203030 권욱현 : 감사합니다
+11:39:17	 From Andrés Brito : Thank you
+11:39:20	 From 20203181 김현성 : 감사합니다
+11:39:20	 From 20194493이영준 : 감사합니다
+11:39:21	 From Rushda Basir : Thankyou!
+11:39:22	 From Radhika Dua : Thank you
+11:39:23	 From 20204294_김주형 : 감사합니다!
+11:39:23	 From M-2019-4421 백유미 : 감사합니다.
+11:39:23	 From 박성진 20204341 : 감사합니다.
+11:39:24	 From 20204225 강정모 : 감사합니다!

@@ -1,0 +1,69 @@
+10:32:57	 시작  20203043_김경현 : 네
+10:32:57	 시작  20204507 이현기 : 네
+10:32:57	 시작  20203491 이재완 : 네
+10:32:58	 시작  jaimeen : 네
+10:32:58	 시작  김현경 (20194366) : spl
+10:32:59	 시작  20203030 권욱현 : 네 들립니다.
+10:33:00	 시작  김무종 : 네
+10:33:00	 시작  최별이 : 네 잘들립니다
+10:33:02	 시작  Jiwon Joo : 예.
+10:33:05	 시작  20208199_Junhyeon Park : 네
+10:59:59	 시작  20185051 SoJung : 1/N 이 왜 생기나요??
+11:00:06	 시작  20208220 이원준 : 평균취한데요
+11:00:13	 시작  20185051 SoJung : 감사합니다!
+11:01:28	 시작  김현경 (20194366) : 시냅스?
+11:01:30	 시작  Jisu : neurotransmitter
+11:01:32	 시작  M_20194421_백유미 : dendrite
+11:01:33	 시작  Mario Choi : Neurotransmitters
+11:01:58	 시작  20205440 (Will)mer Quiñones : Q: why the 1/N was there?A: To take the average
+11:02:16	 시작  DANIEL : acetylcholine
+11:02:19	 시작  20204225 강정모 : acetylcholine
+11:08:28	 시작  Rushda Basir : if we don't use any activation function, will it still be a neural network? Like in embeddings
+11:08:46	 시작  김현경 (20194366) : You mean logistic regression contained by neural networks?
+11:11:09	 시작  M_20194421_백유미 : Can we attribute the specific features in the h1~hn ? Then how we can attribute the features in the NN?
+11:13:03	 시작  Jae Wook Jeong : is that 4 layers or 1 layer contain 4 features?
+11:13:22	 시작  Jae Wook Jeong : thx
+11:16:32	 시작  M_20194421_백유미 : 설명해주신것처럼, 특정 성질(feature)에 대해서 regression 할 수 있으면, 인위적으로 특정feature을 지정하는지요? 아니면, 자체적으로 특정 feature을 지정하는지요? 
+11:17:58	 시작  이성준 : 최초 입력벡터의 값이 1과 0만 있는 건가요?
+11:18:13	 시작  M_20194421_백유미 : 아 그럼 자체적으로 feature selection을 하는군요!! 감사합니다.
+11:18:32	 시작  Rushda Basir : Does adding a hidden layer increase number of feature by only 1?
+11:18:41	 시작  Kyeonghyeon Park : sigmoid가 아닌 다른 non-linear activation function (마지막 y로 0에서 1사이 값을 return)을 쓴다면 그때는 이 model을 무엇이라 부르나요?
+11:19:18	 시작  20203491 이재완 : layer 간에 propagate가 되면서 dimension 이 줄게 되는데 이때 t번째 layer's dimension/t-1번째 layer's dimension  비율의 maximum 값이나 최적의 값이 있나요?
+11:22:32	 시작  Rushda Basir : what is the use of bias term?
+11:24:08	 시작  20204618 황시환 : ㄴ google 'bias term in neural network' and answer pops up right away
+11:26:29	 시작  20205440 (Will)mer Quiñones : if you think about a simple model: y = wx + b, without the (b)ias, the values of y are 'limited' to the origin
+11:52:59	 시작  20185051 SoJung : 3 -> [3 0; 0 3] 아닌가요?
+11:57:48	 시작  20185051 SoJung : 3을 [3 3;3 3] 이라고 하셔서요
+11:57:54	 시작  20185051 SoJung : 넵
+11:58:22	 시작  20185051 SoJung : 아! 넵ㅎㅎ
+11:58:35	 시작  Kyeonghyeon Park : misc.가 뭔지 다시 말씀해주실 수 있을까요?
+12:03:22	 시작  Rushda Basir : In unsupervised learning when you don't have label vector, how does error back propagate?
+12:04:44	 시작  20205440 (Will)mer Quiñones : there's no backprop on unsupervised learning
+12:05:17	 시작  Ju Yunsang : 학습할때 GPU memory에 올라가는 대부분의 용량은 misc인가요??
+12:05:21	 시작  20205440 (Will)mer Quiñones : GAN does not have labels?
+12:05:28	 시작  20205440 (Will)mer Quiñones : 'labels'
+12:05:45	 시작  Ju Yunsang : 감사합니다
+12:06:28	 시작  jaegyunkim : 그럼 학습 시작시에 잡혔던 메모리보다
+12:06:55	 시작  jaegyunkim : 질문 다시 올릴게요..
+12:07:20	 시작  20208220 이원준 : 그 마지막에 Loss 구할때는 W같은게 없고 바로 C를 계산해서 del aL C 가 있는거죠?
+12:07:36	 시작  Eunyoung Hyung : net1 에서 loss1을 얻고 net2 에서 loss2를 얻었을때loss1 * loss2 를 backward 시키면 두 네트워크 모두 학습 되나요?
+12:07:39	 시작  20203491 이재완 : 감사합ㄴ디ㅏ
+12:07:52	 시작  jaegyunkim : 학습 도중에 메모리가 자꾸 늘어나서
+out of memory가 뜨게되면
+garbage collection 을 고려해야겠네요?
+12:08:27	 시작  Rushda Basir : is there any definite way to decide the learning rate in training NN ?
+12:08:40	 시작  20208220 이원준 : 알겠습니다
+12:09:20	 시작  Andrés Brito : Thank you
+12:10:24	 시작  Rushda Basir : Thankyou Professor!
+12:10:26	 시작  20185051 SoJung : 감사합니다~!!
+12:10:27	 시작  20208220 이원준 : 슬라이드 48번에 Transpose는 왜 취한거였나요? 잘 못들어서 ㅠ
+12:10:28	 시작  박민영(20203758) : 감사합니다
+12:10:30	 시작  Eunyoung Hyung : 감사합니다
+12:10:36	 시작  jaegyunkim : 감사합니다
+12:10:46	 시작  20208220 이원준 : 네네
+12:11:15	 시작  20208220 이원준 : 아하
+12:11:19	 시작  20208220 이원준 : 알겠습니다
+12:11:21	 시작  20208220 이원준 : 감사합니다
+12:11:35	 시작  20204225 강정모 : 감사합니다
+12:11:39	 시작  Minkyu Jeong (20204542) : 감사합니다!
+12:11:46	 시작  20203642_최상민 : 감사합니다

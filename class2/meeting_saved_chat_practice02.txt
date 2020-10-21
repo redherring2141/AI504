@@ -1,0 +1,173 @@
+10:32:13	 From 20185051 김소정 : 안녕하세요~!
+10:32:14	 From 조상재 [20205341] : 안녕하세요 교수님
+10:32:14	 From 20203043_김경현 : 안녕하세요
+10:32:14	 From 20193640_최중원 : 안녕하세요
+10:32:14	 From hyun sagong : 안녕하세요
+10:32:14	 From 20204618 황시환 : 안녕하세요!
+10:32:15	 From 20209007 최상범 : 안녕하세요
+10:32:18	 From Sebin Lee : 안녕하세요
+10:32:20	 From 20204597_최환일 : 안녕하세요 
+10:32:21	 From 20203030 권욱현 : 안녕하세요
+10:32:22	 From 20194525_전우진 : 안녕하세요
+10:32:32	 From 20204317 남기웅 : 안녕하세요
+10:32:32	 From Rushda Basir : Good Morning!
+10:32:45	 From 20204871 YH Tan : Morning!
+10:32:46	 From Andrés Brito : Good morning
+10:32:51	 From 20204788 Chuanbo Hua : Good morning
+10:32:52	 From Wabi Demeke : Good morning!
+10:32:53	 From Jiwon Joo : 안녕하세요~
+10:32:53	 From 김무종 : 안녕하세요~
+10:32:57	 From 박성진 (20204341) : morning!
+10:32:59	 From 20207020 박승환 : 안녕하세요~
+10:33:01	 From 20204817 Federico Berto : Morning! 
+10:33:02	 From yjk_20205015 : morning
+10:34:19	 From Seung Jun Lee : good morning
+10:36:17	 From soro bedionita : can I use the notebook locally
+10:36:20	 From 20175499 이성준 : SL에서
+10:36:31	 From 20175499 이성준 : X 도메인에 원소들이
+10:36:40	 From 20175499 이성준 : binary 분류기
+10:38:49	 From 최별이 : 네 잘 보입니다!
+10:38:50	 From 20204436 윤원제 : yes
+10:38:51	 From 20203542 장동곤 : 네
+10:38:51	 From Haneul Yoo : Yes
+10:38:51	 From Jiwon Joo : 예.
+10:38:53	 From Andrés Brito : yes
+10:42:54	 From 20185051 김소정 : 왜 3까지일때는 x.00 으로 표시되는데, 6을 추가하면 정수만 표시되는건가요?
+10:43:39	 From 이윤지 20203489 : plt.show() 의 유무는 어떤 역할을 하나요? 
+10:45:53	 From 20205440 Willmer Quiñones : Matplotlib cheatsheets: https://github.com/matplotlib/cheatsheets
+10:47:52	 From Mario Choi : Can plt handle more than one plot simultaneously?
+10:48:08	 From Mario Choi : I mean different canvases
+10:48:51	 From Mario Choi : I see. Thank you
+10:49:11	 From soro bedionita : what is the role of the for loop in the function?
+10:51:00	 From Wabi Demeke : y=foo (x_line)plt.plot(x_line,y, 'r')
+10:51:12	 From JunMin Lee : y_line = foo(x_line)
+draw_plot(x_line, y_line, x_line, y_line)
+10:51:14	 From 20204618 황시환 : plt.plot(x_line, foo(x_line))
+10:52:49	 From 20205503 박경현 : X = np.arange(10)
+Y = np.arange(10)
+for i in range(len(X)):
+    plt.plot(X[i], Y[i])
+plt.show()
+로 for loop 실행 시 아무것도 나타나지 않습니다
+plot의 X와 Y에 list가 아닌 single element를 넣을 시 그림에 표시되지 않는 것 같습니다
+10:57:52	 From 20205503 박경현 : Sample이 randomly sample이 아닌건가요?
+10:57:56	 From 20204871 YH Tan : noise = np.random.normal(0,0.1)
+x_sample = np.linspace(0, 10, 5) + noise
+y_sample = foo(x_sample) + noise
+10:59:21	 From 20204871 YH Tan : should we add noise to y sample as well?
+10:59:53	 From soro bedionita : y_sample =Y-sample+np.random.normal(loc=0, scale=0.1,size=5)
+11:00:01	 From JunMin Lee : x_sample = np.linspace(0, 10, 5)
+noise = np.random.normal(0, 0.1, x_sample.shape)
+y_sample = foo(x_sample) + noise
+11:01:29	 From 20208220 이원준 : graph of 2nd quiz is effected by modification of code in 3rd quiz. Can you prevent this situation by certain function?
+11:02:06	 From 20208220 이원준 : I just plotted all
+11:02:21	 From 20208220 이원준 : yes
+11:03:41	 From Wabi Demeke : Should  we add the noise in the inputs or outputs? which one is practical?
+11:04:03	 From 20209007 최상범 : well just in case draw_plot shows different 3 canvases in my case though
+11:04:37	 From 홍기훈_20194580 : noise를 더할때 y_sample = foo(x_sample) +np.random.normal(0,0.3, num_points) 로 하는것은 아닌가요? 
+11:04:40	 From 20203608 Wonwoo Cho : you can use plt.close() after plt.show()
+11:04:47	 From 석원 이 : sampled values are added to the parameter of foo. is it intended?
+11:04:52	 From 20205503 박경현 : foo function 안에 noise가 들어갔는데 왜 y_sample이 graph에서 벗어나는건가요?
+11:05:19	 From 조상재 [20205341] : 교수님, plot title이나 legend도 plt.title plt.legend로매트랩과 동일하게 작성하는건가요
+11:10:39	 From Jisu : Why do you add new axis to x_sample when fitting the data?
+11:12:23	 From 20185051 김소정 : seed = 0이 무슨 의미인지 다시 설명 부탁드려요
+11:14:25	 From 20185051 김소정 : 감사합니다!
+11:14:36	 From 20208220 이원준 : seed must be 0?
+11:14:48	 From Jisu : Oh, so I reckon that you are adding a dummy axis for the sake of making input of dimension of form (data, feature). Thanks!
+11:16:07	 From 20203210_Jiyoon_Myung : y_sample에는 [:,None]을 안해줘도 되는건가요?
+11:17:48	 From Muhammad Umer Khan Niazi : so r2 is a type of cost function here?
+11:19:20	 From Muhammad Umer Khan Niazi : Got it.
+11:19:47	 From 20205440 Willmer Quiñones : reshape x_sample[0] tho
+11:20:04	 From Seung Jun Lee : 왜 x_sample에만 x_sample[:,None]를 이용해서 dimension확장시키는 건가요?
+11:20:07	 From 20205440 Willmer Quiñones : y_hat = lr.predict(x_sample[0].reshape(-1, 1))
+11:20:17	 From Kien Mai : x[[0], None]
+11:22:05	 From Wabi Demeke : MSE = np.square(np.subtract(y_sample,y_hat)).mean() 
+11:22:10	 From JunMin Lee : MSE = sum(np.square(y_hat-y_sample))/len(x_sample)
+11:23:15	 From 정종오 : from sklearn.metrics import mean_squared_errormse = mean_squared_error(y_sample, y_hat)
+11:27:01	 From Jisu : under
+11:27:02	 From 박성진 (20204341) : under
+11:27:02	 From 20203210_Jiyoon_Myung : under
+11:27:03	 From young jun Choi (20204581) : underfittting
+11:27:03	 From 20209007 최상범 : under
+11:27:04	 From 명진 이 : under
+11:27:07	 From Rushda Basir : under
+11:30:46	 From 석원 이 : could you explain why we need to do fit_transform in polynomial regression?
+11:31:52	 From 20185051 김소정 : 1차일 때에만 x_sample에 0승이 필요가 없는건가요?
+11:32:51	 From 20205503 박경현 : polynomial regression이 없어서 편법으로 x^0, x^1, x^2를 x1, x2, x3로 취급해서 linear regression을 진행하는건가요?
+11:35:42	 From 20208220 이원준 : degree = 3 fits well
+11:38:58	 From Yoonjae Choi : reul
+11:42:50	 From 이윤지 20203489 : how can i distinguish which color is pr or rr ? 
+11:47:10	 From jaegyunkim : iris.data도 업로드 해주셨던건가요??
+11:47:49	 From HyunSoo Kim : from sklearn.datasets import load_irisiris=load_iris()
+11:47:49	 From 20204871 YH Tan : Iris data can be imported from sklearn
+11:47:49	 From 20185051 김소정 : 파이썬에서 불러올 수 있습니다
+11:47:50	 From 20185051 김소정 : from sklearn.datasets import load_iris
+11:47:51	 From 석사과정_유명성_20203389 : datasets.load_iris()
+11:47:56	 From soro bedionita : from sklearn import datasetsris = datasets.load_iris()
+11:48:01	 From jaegyunkim : 감사합니다
+11:48:07	 From 정종오 : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/
+11:50:12	 From Yoonjae Choi : from sklearn.datasets import load_iris
+X2, y2 = load_iris(return_X_y=True
+11:50:14	 From Yoonjae Choi : from sklearn.datasets import load_iris
+X2, y2 = load_iris(return_X_y=True)
+11:50:17	 From Muhammad Umer Khan Niazi : Please change screen share
+11:53:04	 From 20208220 이원준 : test_size explain again?
+11:53:18	 From Rushda Basir : What does random state does?
+11:53:41	 From 20208220 이원준 : got it
+11:54:42	 From Rushda Basir : got it. Thanks
+11:54:56	 From 20205503 박경현 : 나중에 iris.data를 이용해서 X, y를 구성하는 코드도 올려주실 수 있을까요?
+12:00:46	 From 20204368변보선 : 교수님 클라썸에 오늘 강의에 사용한 ipynb파일 솔루션으로 업로드 해주신다면 공부할 때 도움이 많이될 것 같습니다 감사합니다!
+12:01:01	 From 20204368변보선 : 감사합니다!!
+12:01:21	 From Kien Mai : 0.7333333
+12:01:41	 From 박성진 (20204341) : me too
+12:01:46	 From 20204189 Ramazan Abdikarimuly : sam
+12:01:47	 From 20204189 Ramazan Abdikarimuly : e
+12:03:53	 From 홍기훈_20194580 : 오늘 다루지 않은 import decision tree, then train DT 같은 퀴즈 SOLUTION도 올려주실수 잇을까요?
+12:04:15	 From young jun Choi (20204581) : print(svm.score(X_test[:, :2], y_test))
+12:04:16	 From 20208220 이원준 : 저는 시간 괜찮은데 혹시 DT도 여기서 진행해주실 수 있나요?
+12:06:27	 From 박성진 (20204341) : increase
+12:06:30	 From 20204225 강정모 : increase
+12:06:37	 From Rushda Basir : increase
+12:07:21	 From young jun Choi (20204581) : Does increasing the depth has something to do with overfitting?
+12:07:37	 From 20208220 이원준 : tree has lower accuracy then other methods. Why?
+12:07:52	 From 석원 이 : how does each node in decision tree decide which branch to take?
+12:09:33	 From Rushda Basir : calculate impurity using gini index to choose each branch
+12:09:57	 From 20208220 이원준 : But professor, you said validation set is not used usually nowadays since data set is large enough in previous lecture? Then is it okay to use test data to fix hyper-parameter?
+12:11:02	 From Mario Choi : "scikit-learn uses an optimised version of the CART algorithm; however, scikit-learn implementation does not support categorical variables for now."
+12:12:04	 From 20208220 이원준 : got it
+12:18:47	 From 20203243_박영서 : plt.scatter(X_test[:, 0], X_test[:, 1], c=y_hat) ?
+12:19:19	 From 20203243_박영서 : that code works
+12:23:30	 From Wabi Demeke : yes
+12:23:33	 From jaegyunkim : 넵
+12:23:35	 From Rushda Basir : yes
+12:25:13	 From jaegyunkim : 고차원의 데이터를 PCA를 해서 시각화하는건
+12:25:26	 From jaegyunkim : 텐서보드가 베스트인가요? 교수님은 주로 사용하는 툴이 뭔가요?
+12:26:15	 From 20204817 Federico Berto : Shouldn't the ground truth be with all the dataset? Like
+plt.scatter(X[:, 0], X[:, 1], c=y) 
+12:26:52	 From Young Hoo Cho : Is it correct to have all the scatter graphs are the same? Because the given decision tree graph (I assume screenshot) looks different from those of logistic regression and SVM
+12:30:24	 From jaegyunkim : 아뇨 밑에 마저 써있습니다.
+12:31:45	 From jaegyunkim : 감사합니다.
+12:32:34	 From 20204817 Federico Berto : Got it, thanks!
+12:33:33	 From Soyeon Kim (20205470) : 모델이 구분한 경계를 plotting할 수 있나요?
+12:35:42	 From 20185051 김소정 : 성민님 혹시 코드도 올려주실 수 있으신가요?
+12:36:28	 From 20185051 김소정 : 감사합니다!!
+12:36:53	 From 20204551 정준영 : 김성민님 혹시 decision tree에서 max depth를 얼마로 하셨나요?
+12:37:17	 From 51560 김성민 : 6으로 하였습니다
+12:37:23	 From 20204551 정준영 : 감사합니다
+12:37:54	 From Young Hoo Cho : 감사합니다.
+12:37:55	 From 20185051 김소정 : 감사합니다~~
+12:37:58	 From jaegyunkim : 감사합니다.
+12:37:59	 From 20204225 강정모 : 감사합니다!
+12:38:00	 From 20194525_전우진 : 감사합니다,
+12:38:00	 From 20208220 이원준 : 감사합니다
+12:38:02	 From Soyeon Kim (20205470) : 감사합니다.
+12:38:03	 From young jun Choi (20204581) : 감사합니다
+12:38:04	 From 박성진 (20204341) : 감사합니다
+12:38:05	 From Andrés Brito : Thank you
+12:38:05	 From Jiwon Joo : 감사합니다~!
+12:38:06	 From 20203492 이재욱 : 감사합니다
+12:38:08	 From 20204871 YH Tan : thank you sir!
+12:38:12	 From Daniel Saatchi : thanks
+12:38:12	 From Minkyu Jeong (20204542) : 감사합니다!
+12:38:13	 From 20205525 설유선 : 감사합니다:)
+12:38:23	 From Rushda Basir : Thankyou Professor!

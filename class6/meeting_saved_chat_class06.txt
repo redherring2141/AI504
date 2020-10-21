@@ -1,0 +1,68 @@
+10:30:45	 From 20185051 SoJung : 안녕하세요~
+10:30:47	 From Jaegyun Kim : 안녕하세요
+10:30:49	 From 20205503 Kyeonghyeon Park : 안녕하세요
+10:30:50	 From Jihwan Joo : 안녕하세요.
+10:30:52	 From Andrés Brito : Good Morning
+10:30:58	 From 20193640_최중원 : 안녕하세요~
+10:31:06	 From 20203030 권욱현 : 안녕하세요
+10:31:33	 From 이성준 : 교수님, 실습관련 질문있습니다.
+10:38:00	 From Jaegyun Kim : 아 질문있습니다. 단순한 var을 NN으로 만드는것이 아니라 log_var을 만들던데 이유가 있나요?
+10:38:34	 From 20185051 SoJung : log를 씌워야하는데, var가 음수가 나오면 안되기 때문이 아닐까요....?
+10:38:36	 From Jaegyun Kim : 데이터의 mu와 var을 만들때.
+10:38:36	 From 이성준 : (-inf~ inf)
+10:39:07	 From Jaegyun Kim : 네 맞습니다
+10:39:21	 From 20185051 SoJung : DKL 계산할 때 log가 필요해서요
+10:39:43	 From 이성준 : WX+b --> (-inf ~ inf)
+10:39:48	 From 이성준 : var >= 0
+10:39:59	 From 20185051 SoJung : 1/2(mu^2+var-log(var)-1)
+10:40:08	 From Jaegyun Kim : 아 그렇군요
+10:40:53	 From Jaegyun Kim : 감사합니다~
+11:05:28	 From 이성준 : 분리과정을 잘 모르겠습니다.둘째줄에 (1/N)은 두항에 모두 있어야 하는 것 아닌가요?
+11:08:19	 From 홍기훈_20194580 : sum의 개수는 각각 J,K개가 맞는데 summation앞의 계수는 양쪽다 1/N이 되어야할것 같습니다.
+11:08:21	 From 20185051 SoJung : 1/N[k개 positive sum + p개 negative sum]
+11:08:28	 From 20185051 SoJung : 저도 같은 생각입니다
+11:09:03	 From 20185051 SoJung : sum은 두개로 나누더라도 N으로 나누는 것이 동일해야 한다는 뜻인 것 같습니다
+11:10:25	 From 이성준 : 네
+11:10:26	 From 홍기훈_20194580 : 네
+11:14:13	 From Rushda Basir : why are the yn and (I-yn) not multiplied with the log terms for separate +ve and -ve cases?
+11:16:01	 From Rushda Basir : positive and negative samples
+11:16:45	 From Rushda Basir : right. Thankyou
+11:26:59	 From 박성진 20204341 : How can we adjust early stopping point using both generator and discrim loss ?  and can it be different depending on the problem (dataset)?
+11:32:48	 From 박성진 20204341 : Thanks
+11:37:42	 From 이성준 : Nash 평형에 이르지 못하는 이유가 1) modified objective 때문인지 2) 아니면 번갈아 가며 갱신하기 때문인지 궁금합니다
+11:37:43	 From Ji : would the objective be the same if we change the generative objective from min prob to max prob such that
+min(E log(1-D(G(z)))) to max(E log(D(G(z)))?
+Just wondering if it 'has to be' min-max problem with viable reasons.
+11:37:51	 From 박영서 : Nash equilibrium은 이론적으로 minmax game에서만 가능한 것인가요?
+11:39:01	 From 20185051 SoJung : -를 붙이면 min 으로 만들 수 있는데, 그럼 minmax game이 되는건가요?
+11:39:06	 From 이성준 : 네, 감사합니다.
+11:41:34	 From 20185051 SoJung : 아, maxmax game이어도 되는거군요! 구지 바꿀 필요가 없네요..ㅎㅎ
+11:43:55	 From 51560 김성민 (청강생) : Modified G objective function을 써도 학습결과 real/fake 를 discriminate할때 50:50의 확률로 구분하는 것에 수렴하나요?
+11:47:06	 From 20209007 최상범 : is there any specific meaning in k steps?such as mk=dataset samples
+11:49:23	 From 이성준 : D가 더 잘하면, G에 for loop로 학습을 더 시키는 게 자연(?)스러운건 아닌지 궁금합니다.
+11:50:42	 From 이성준 : 네, 감사합니다.
+12:22:13	 From 안성용 20195153 : Inception score는 Ground Truth가 없어도 계산 가능하고, FID score는 GT image가 있을때만 계산 가능한게 맞나요?
+12:22:41	 From 20205503 Kyeonghyeon Park : sample한 truth/fake image들로 Gaussian distribution을 추정해서 score를 계산하는건가요?
+12:25:48	 From 박민영 (20203758) : inception model은 1000개 카테고리로 학습된건데 얼굴 이미지만 가지고 FID를 구해도 잘 나오는건가요?
+12:26:09	 From 박민영 (20203758) : inception model은 추가로 학습시키지 않고 사용만 하는건가요?
+12:26:15	 From 20205503 Kyeonghyeon Park : 감사합니다
+12:26:38	 From 20203210_Jiyoon_Myung : 2048개간의 mean을 구하는건가요 샘플 만개의 mean을구하는건가요?
+12:27:16	 From 박민영 (20203758) : 아하 감사합니다!
+12:27:29	 From 이성준 : 5000개 real, 5000개 fake에 대해 각각의 fake에 대응하는 real을 선택한 후, 거리를 구하는 건가요?
+12:28:46	 From 20208190 김형우 : Inception score에서,(예를 들어 반고흐 풍의 이미지를 만들고 싶을 때) image diversity가 모든 class에 대해 균일한게 아니라 원하는 class쪽에서 더 높게 나와야 하는것 아닌지 궁금합니다.
+12:28:46	 From Hyun-Kyung Kim : 이미 학습된 모델인 inception v3를 이용하여 스코어를 계산하는 과정에서, 사용자 정의된 모델의 정보는 어느 단계에서 활용되는 것인지 궁금합니다.
+12:29:21	 From 20208220 이원준 : 오늘 공식적인 수업은 끝난건가요? 아까 뒤에 슬라이드 조금 남은거 같던데..
+12:29:37	 From 20208220 이원준 : 앗 알겠습니다 감사합니다
+12:30:04	 From 20208190 김형우 : 그렇군요 감사합니다.
+12:31:23	 From 20185051 SoJung : 지난 수업시간에서 KL 이라고 적으신 것과 D_KL 이라고 적으신 것의 차이가 있나요?
+12:31:31	 From 20185051 SoJung : 감사합니다!
+12:31:38	 From 조상재 [20205341] : 감사합니다~
+12:31:40	 From 20203210_Jiyoon_Myung : 감사합ㄴ디ㅏ
+12:31:42	 From Jihwan Joo : 감사합니다~~
+12:31:43	 From Hyongseok Yoon : 감사합니다
+12:31:44	 From 이재완 : 감사합니다
+12:31:46	 From Hyeonseong Kim : 감사합니다
+12:31:47	 From 심상민 (20203347) : 감사합니다!
+12:31:47	 From 박민영 (20203758) : 감사합니다
+12:31:47	 From Hyun-Kyung Kim : 감사합니다
+12:31:52	 From Jong Hak Moon : 감사합니다
