@@ -1,0 +1,72 @@
+10:32:17	 From 20185051 SoJung : 안녕하세요~
+10:32:29	 From 20175499_이성준 : 안녕하세요~
+10:32:31	 From 20203043_김경현 : 안녕하세요
+10:32:35	 From Andrés Brito : Good morning
+10:32:39	 From Minkyu Jeong : 안녕하세요!
+10:35:17	 From 20204294_김주형 : 네 재밌게 할 수 있었습니다!
+10:36:06	 From 金宰均 : 안녕하세요 배치 사이즈가 생각보다 학습에 영향을 주던데요, 아무래도 SGD 컨셉을 생각해보면, 배치사이즈는 작을수록 학습에 좋은걸까요?
+10:36:24	 From Wonhong Yoo : 유원홍
+10:36:25	 From Ju Yunsang : 주윤상 입니다
+10:36:25	 From 金宰均 : 김재균
+10:36:25	 From Inhee Kim : 김인희
+10:36:25	 From 20205382 : 허경훈
+10:36:27	 From Yonghee Kim : 네이버 김용희입니다
+10:36:48	 From 이원준 : 과제가 끝나서 하는 말이지만 혹시 딥러닝 모델을 개선시키는 건 어떻게 하나요? 계속 시도해보고 실패하고 반복하는 수 밖에 없나요? 아니면 어떤 계산을 통해서 시행하나요?
+10:37:24	 From 20203210_Jiyoon_Myung : epoch을 50으로 했더니 D_loss는 1에 수렴하고 G_lossㄴ,ㄴ 0에 수렴하던데 왜 그런가요?
+10:38:26	 From 20203210_Jiyoon_Myung : 아 그 반대인것 같습니다
+10:38:29	 From 20185051 SoJung : epoch 50에 batch 20했는데, 저는 D_loss가 거의 0에 수렴하던데요..
+10:38:52	 From 20203210_Jiyoon_Myung : 원래 GAN은 오래 돌리면 D에게 유리해지나요
+10:39:25	 From 20203210_Jiyoon_Myung : 넵 감사합니다
+10:42:07	 From mario : 최인식
+10:45:21	 From 김명철 (20194318) : The token is one of the methods to embedd the words? or just same meaning?
+10:51:25	 From 20175499_이성준 : 이 예에서는 17개만 표현하는 건가요?
+10:51:35	 From 20175499_이성준 : 벡터원소 17
+10:51:48	 From 20175499_이성준 : 네~
+10:55:43	 From 20175499_이성준 : 'John' 같은 word는 one-hot 같은 방법으로 이미 알고 있는것이 맞나요
+11:02:02	 From 20175499_이성준 : 네~
+11:06:16	 From 20175499_이성준 : distributed 방법에서도 단어와 벡터가 1:1 대응하는 것인가요? 그런다면 벡터원소 중 하나의 값을 1-->1.1로 바꾼 벡터는 어떤 단어와 대응하는 건가요?
+11:09:52	 From 20175499_이성준 : 단어와 벡터가 1:1 대응이라면, 주변과의 관계에서 그 단어의 의미를 뽑아내지 않아도 될 것 같은데, 개념을 잘 모르겠습니다.
+11:13:04	 From Ju Yunsang : -가 실제로 구현할때도 vector간의 -연산인가요??
+11:14:11	 From Ju Yunsang : 감사합니다
+11:15:38	 From 이재훈 : 단어의 개수가 매우 많아지면 vector 에 embedding 을 한다고 해도 capacity가 부족해서 다 담아내지 못할것 같은데요, training 하는 단어의 개수를 고려해서 embedding 할 vector 의 dimmension 을 선택해야 하는것인가요?
+11:16:16	 From 20194318 myungchul : 한 단어에서도 여러 relationship이 있을텐데, 그 복잡도를 어떻게 유지하면서 설계한 건가요? (유사한 질문이네요.)
+11:16:29	 From 20185051 SoJung : ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+11:16:38	 From 20175499_이성준 : why?
+11:16:42	 From user : Good
+11:16:49	 From 이원준 : I can't agree...
+11:18:03	 From 20185051 SoJung : 오른쪽에 있는 단어는 뭔가요?
+11:18:16	 From 20205440 (Will)mer Quiñones : probably the model captured the bias within the dataset
+11:18:49	 From 20209007 최상범 : does word2vec seperates 최현석셰프 as 최현석 and 셰프?
+11:30:44	 From 20175499_이성준 : there 대신 올 수 있는 단어가 무엇인가요? 소프맥스에서
+11:31:19	 From 20175499_이성준 : 분모에서요
+11:31:46	 From 20205503 Kyeonghyeon Park : dictionary 안에 있는 모든 단어라고 하셨던 것 같습니다
+11:31:57	 From 20175499_이성준 : 네, 감사합니다.
+11:33:40	 From 20185051 SoJung : dictionary에 새로운 단어가 추가되면 전부 다 다시해야하나요?
+11:35:22	 From 金宰均 : skip-gram이나 cbow나 log liklihood를 구할때, context와 target word가 다들어가는것 같은데, 왜 skip-gram이 더 많이 배운다고 보는건가요? cbow는 P(target|contexts)일 때 contexts들이 다 들어가니깐 skip gram 과 마찬가지로 한번 학습할때 target, contexts 단어들이 다 학습을 할 기회가 주어지는것 아닌가요?
+11:36:05	 From 金宰均 : 감사합니다.
+11:50:38	 From 이원준 : subword가 형태소 같은걸 말씀하시는건가요?
+12:02:01	 From mario : what happens to overlapping n-grams with the same or similar frequency?
+12:03:17	 From mario : in this case es is a subset of est, but if there was a word like less
+12:03:41	 From mario : are they all just accumulated in the vocabulary?
+12:04:13	 From 20185051 SoJung : 'we' freq 8
+12:04:42	 From youngjunchoi : e in newest goes into est
+12:05:08	 From 20185051 SoJung : 감사합니다
+12:19:21	 From user : 감사합니다.
+12:19:30	 From soro bedionita : thank you
+12:19:40	 From 20185051 SoJung : 감사합니다~!
+12:19:42	 From 박민영 (20203758) : 감사합니다
+12:19:43	 From 20204871 YH Tan : thank you sir!
+12:19:45	 From Andrés Brito : Thank you
+12:19:45	 From 金宰均 : 그렇다고 BERT에서의 stick이 정말 다양한 임베딩이 있는건 아니지 않나요? attention을 적용한 후 값이
+12:19:47	 From Rushda Basir : Thankyou!
+12:19:49	 From 金宰均 : 달라지는건 아닌가요?
+12:19:49	 From 20203181 김현성 : 감사합니다
+12:19:49	 From Daniel : thanks
+12:20:02	 From Yujin Baek : thank you
+12:20:21	 From 金宰均 : 아… 알겠습니다
+12:20:36	 From 20203491 이재완 : word2 vec에서는 단어 하나가 벡터로 일대일 대응 안된다고 하시지 않으셨나요?
+12:20:38	 From 金宰均 : 감사합니다.
+12:20:39	 From 박영서 : BERT, ELMO는 sub-word encoding에 포함되나요? 아니면 아예 다르게 분류되나요?
+12:21:11	 From 20194318 myungchul : BERT, GPT, ELMo 등의 자세한 내용은 다음에 나오나요?
+12:21:16	 From 20203491 이재완 : 감사합니다
+12:21:46	 From 박영서 : 네 감사합니다!

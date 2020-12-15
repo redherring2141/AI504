@@ -1,0 +1,57 @@
+10:34:48	 From youngjunchoi : 안녕하세요~
+10:34:49	 From 20203295 사공현 : 안녕하세요
+10:34:49	 From Minkyu Jeong : 안녕하세요
+10:34:52	 From 20204225 강정모 : 안녕하세요
+10:34:53	 From 20185051 김소정 : 안녕하세요~
+10:34:54	 From WonhongYoo : 안녕하세요~
+10:34:54	 From Jaegyun Kim : 안녕하세요
+10:34:55	 From 기계_20203043_김경현 : 안녕하세요
+10:35:02	 From Ju Yunsang : 네이버 주윤상 입니다
+10:35:10	 From Jaegyun Kim : 네이버 김재균 입니다
+10:35:19	 From 김윤영 : 네이버 김윤영입니다
+10:35:37	 From naver : 네이버 김인희 입니다
+10:35:39	 From WonhongYoo : 네이버 유원홍 입니다.
+10:35:45	 From Jisu Jeon : 네이버 전지수입니다
+10:37:05	 From Mario Choi : 네이버 최인식입니다
+10:37:12	 From Yonghee Kim : 네이버 김용희입니다
+10:37:21	 From 노윤영 4076 : 네이버 노윤영 입니다
+10:51:58	 From LSJ : 그림에서 각각의 LSTM 이 지난수업에서 RNN 내의 각 스테이지(hi)에 해당하는 것이 맞나요?그리고 그림에서 pi가 지난수업 hi와 동일한 것 맞나요?지난수업에서 (h0 ~ hN) 전체를 RNN 이라하고,RNN의 변형이 LSTM 이라고 받아들였는데여기서는 각 스테이지를 LSTM 이라고 부르는 것 같아 혼동이 되어서요.
+10:52:37	 From LSJ : 네, 감사합니다.
+10:54:40	 From Jaegyun Kim : LSTM이나 RNN이나, hidden과 ouput vector가 따로나오는거 아닌가요? 그러면 p1, p2, … 이 output vector 아닌가요?
+10:56:57	 From Jaegyun Kim : 아.. 네 알겠습니다.
+10:57:01	 From Jaegyun Kim : 감사합니다
+10:57:40	 From Jisu Jeon : Are the embeddings normalized?
+10:59:41	 From LSJ : LSTM에 512 로 맞추어 넣으려면 어떤값이던We가 필요할 것 같은데, Word2Vec이 아니라면 어떤 값들로 We를 채우는 것이 맞나요?
+11:00:55	 From LSJ : 소프맥스에서 최고확률의 단어를 고르지 않고, 샘플링하는 이유는 무엇인가요?
+11:02:51	 From Jisu Jeon : The output of CNN
+11:04:20	 From LSJ : 네, 감사합니다.
+11:04:31	 From LSJ : 위에위에 질문이요
+11:10:07	 From Jaegyun Kim : 네
+11:10:08	 From 20204225 강정모 : 네
+11:10:09	 From LSJ : 네
+11:10:09	 From Mario Choi : loud and clear
+11:10:09	 From 20209007 최상범 : yes
+11:15:09	 From LSJ : (14 x 14)가 무엇을 의미하나요?Feature extraction 출력이 (14 x 14 x 채널수)라는 것인가요?
+11:16:20	 From LSJ : 네, 감사합니다.
+11:31:25	 From Jaegyun Kim : 하나의 fiber가 input의 얼마나를 커버하는지를 잘 고려해서 attention feature map을 설정해야하는것이죠?
+11:32:52	 From Jaegyun Kim : 어려운 문제네요 ㅠㅠ..
+11:40:33	 From Jaegyun Kim : 아까 sum of attention이 1이 아니라 ~1 이 어떤 의미를 갖는지 다시한번만 설명해주실수 있으신가요??
+11:42:02	 From Jaegyun Kim : 아… 네 다른 fiber들이 다 attention을 골고루 받게 하는 거군요..
+11:43:51	 From LSJ : hard attention 이었다면 하얀 부분의 크기가 동일해야 하는 것 맞나요?
+11:44:44	 From LSJ : 네, 감사합니다.
+11:45:54	 From 20209007 최상범 : does 'is' 'are' this kinds of word tends to have similiar attention with previous word?
+11:51:15	 From 20203210_Jiyoon_Myung : discriminator은 그림을 판단하는건가요 문장을 판단하는건가요?
+11:51:31	 From 20203210_Jiyoon_Myung : 넵 감사합니다
+11:51:53	 From LSJ : G와 D 모두 encoder와 decoder 가졌다고 말하나요?
+11:53:23	 From Jisu Jeon : So in this case, is the role of the discriminator checking if the ‘text to image’ translation is done correctly?
+11:54:00	 From Jisu Jeon : Instead of simply deciding if the image is fake or not
+11:58:38	 From LSJ : loss에 -1 이 있어야 맞는 것아닌가요?
+12:03:05	 From LSJ : 10을 maximize 하는 것인가 해서요?
+12:03:47	 From LSJ : 네, 감사합니다.
+12:04:58	 From 20185051 SoJung : 감사합니다!
+12:05:02	 From Andrés Brito : Thank you
+12:05:05	 From 20204225 강정모 : 감사합니다!
+12:05:05	 From Rushda Basir : Thankyou
+12:05:06	 From Inhee Kim : 감사합니다
+12:05:09	 From 박성진 20204341 : 감사합니다~!
+12:05:10	 From 20204436 윤원제 : 감사합니다

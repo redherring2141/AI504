@@ -1,0 +1,88 @@
+10:31:42	 From jaegyunkim : 안녕하세요
+10:31:43	 From 20185051 김소정 : 안녕하세요~
+10:31:44	 From 20204507이현기 : 안녕하세요
+10:31:47	 From 심상민 (20203347) : 안녕하세요
+10:32:29	 From jaegyunkim : 네이버직원 출석: 김재균
+10:32:46	 From jisujeon : 네이버직원 출석: 전지수
+10:33:28	 From Ju Yunsang : 주윤상 입니다
+10:33:31	 From 노윤영 : 네이버직원 출석 : 노윤영
+10:33:32	 From Inhee Kim : 김인희 입니다
+10:33:37	 From 정윤진 : 네이버직원 출석: 정윤진
+10:34:18	 From Mario Choi : 최인식 입니다
+10:35:29	 From 김윤영 : 김윤영
+10:37:38	 From Yonghee Kim : 네이버 김용희 출석입니다
+10:42:45	 From LSJ : ball은 왜 2인가요?
+10:52:54	 From 20203210_Jiyoon_Myung : h1자체도 여러개의 layer을 가질 수 있지 않나요?
+10:53:53	 From 20203210_Jiyoon_Myung : 이 그림에서는 각 h가 하나의 layer인걸로 보이는데 RNN에서도 각 input당 여러 layer의 hidden을 가질수 있지 않나요?
+10:54:14	 From LSJ : h(N)까지 있으면 x(N+1)부터는 다시 h(1)에 배당되나요?
+10:55:25	 From 20203210_Jiyoon_Myung : 아 stackedRNN이 basic RNN의 변형이었군요 감사합니다.
+10:55:52	 From LSJ : 입력이 시퀀스면
+10:55:57	 From 20203210_Jiyoon_Myung : h개수는 x개수만큼 있어야 할 것 같습니다
+10:56:18	 From LSJ : 샘플수가 몇개인지 모른다고
+10:56:24	 From LSJ : 이미지와 다르게
+10:56:35	 From LSJ : 네, 감사합니다.
+11:00:13	 From JunMin Lee : Negative
+11:00:14	 From 기계_20203043_김경현 : positive?
+11:00:15	 From 20194318 myungchul : pos
+11:00:17	 From 이재완 : nega
+11:00:19	 From youngjunchoi : negative
+11:00:21	 From 20205648 Andrés Brito : negative
+11:00:21	 From 하영 장 : positive
+11:00:21	 From Rushda Basir : NEGATIVE
+11:00:23	 From __ : either
+11:00:23	 From 20204436 윤원제 : negative
+11:00:24	 From 20209007 최상범 : negative
+11:00:26	 From Jeonghu Pak : negative
+11:08:37	 From 20209007 최상범 : does dicationary also contains 1 dimenstion for unknown words?
+11:10:48	 From __ : <UNK> right?
+11:13:53	 From jaegyunkim : 1. time step마다 pred을 하고 loss가 생겨서 학습을 하게되면, 여러 time step이 동시에 backward를 하게 되는건가요?
+2. 또한 time step 3의 값을 학습할때는 h1,h2,h3가 다 있으니깐, x1과 같이 상대적으로 앞에 있는 token의 feedforward가 상대적으로 뒤에있는 token보다 더 많은 backward를 겪으며 더 많이 학습되겠네요?
+11:14:52	 From jaegyunkim : 질문 1 는 parallel하게 backward가 하게 되는지에 대한 질문입니다.
+11:16:03	 From youngjunchoi : 문장 속 단어의 갯수가 이전 타임스텝과 다른 경우, 가중치는 어떻게 배정되는지 궁금합니다
+11:17:54	 From LSJ : RNN에서 확률이 어떤 곳에서 계산될 수 있나요?
+11:22:13	 From jaegyunkim : 질문2에 연장된 질문인데요..
+명사보다 동사가 적게 노출되고
+또한 한국어는 동사가 뒤에 노출되고 영어는 동사가 비교적 앞에 노출되게 되는데
+언어마다 그럼 embedding performance들이 다르게 되겠네요?? 예를 들어, 한국어는 동사가 명사보다 적고 영어보다 동사가 또 뒤에 있으니,
+임베딩이 영어보다 잘 안된다던지 그런 bias가 생길수도 있는건가요?
+11:22:21	 From Ju Yunsang : RNN에서도 Word2Vec negative sampling같이 많은 양의 softmax 연산을 줄이는 방법론이 있나요??
+11:25:00	 From 20203498 이재훈 : 한 문장에 있는 단어의 개수에 따라서 hidden 의 개수도 달라질텐데, 처음에 모델을 선언할 때 hidden 의 개수가 flexible 하게 생성되도록 하는것인가요? 아니면 한개의 hidden 만 선언하고 feedforward 시킬 때 for loop 등을 사용해서 한개의 hidden layer 가 recursive 하게 sequence input 을 받아들이도록 하는것인가요?
+11:28:07	 From Ju Yunsang : 아 이해했습니다 감사합니다
+11:28:59	 From Yonghee Kim : "This movie ...", "This book ...", "This music ..." 등등 특정 time step에 올 수 있는 expected word가 하나 이상인데, 훈련할 때 cost가 잘 수렴할 수 있나요? 예를들어 "movie"쪽이 최대 expectation을 가지게 되면, "book", "music" 쪽은 매번 틀릴 텐데요...
+11:28:59	 From 20203498 이재훈 : 네 감사합니다
+11:29:00	 From 20194318 myungchul : sequence-specific하게 hidden layer들이 학습이 되는 방식인데, 혹시나 epoch마다 hidden layer들의 sequence shuffling을 하면, 모든 layer가 sequence agnostic하게 잘 학습되지 않을까? 하는 궁금증이 생기는데, 관련된 시도가 있나요? 
+11:29:32	 From 20194318 myungchul : h0 -> h1- >h2이렇게 고정되게 학습을 하는데
+11:29:39	 From 20194318 myungchul : 순서를 바꿔서도 학습을 하면
+11:29:56	 From 20194318 myungchul : input을 바꾸는 게 아니라
+11:30:14	 From 20194318 myungchul : layer weight의 순서를 변경하는 의도였습니다.
+11:30:34	 From 20194318 myungchul : 아 !!! 그렇군요.
+11:30:36	 From 20194318 myungchul : 감사합니다.
+11:30:44	 From Yonghee Kim : 앗 제 질문이 skip된 것 같습니다
+11:32:47	 From Yonghee Kim : (다시 올립니다) "This movie ...", "This book ...", "This music ..." 등등 특정 time step에 올 수 있는 expected word가 하나 이상인데, 훈련할 때 cost가 잘 수렴할 수 있나요? 예를들어 "movie"쪽이 최대 expectation을 가지게 되면, "book", "music" 쪽은 매번 틀릴 텐데요...
+11:49:22	 From JunMin Lee : context latent?
+11:49:25	 From 20203162 김진호 : specific number..?
+11:49:38	 From 유명성 : latent vectors?
+11:49:52	 From Rushda Basir : h4+x4 decoder input
+11:50:13	 From Rushda Basir : yes
+11:50:30	 From 20185051 SoJung : just h4?
+11:51:37	 From soro bedionita : shifting h4
+11:51:46	 From jaegyunkim : s1의 output이 s2의 input이 되야할꺼 같네요.
+11:51:55	 From 20209007 최상범 : h4 - s1^-1(I) ?
+11:52:12	 From JunMin Lee : may encoder output should be a decoder’s input?
+11:55:40	 From LSJ : 이전구조 (모든 s에 h4) 넣는
+11:55:51	 From LSJ : s의 수를 어떻게 알 수 있나요?
+11:56:35	 From 20204507이현기 : 확률을 가지고 output을 내면 같은 문장을 넣어도 번역이 계속 변하게 되는 건가요?
+11:57:01	 From LSJ : 네, 감사합니다.
+11:57:08	 From jaegyunkim : training할때 encoder의 input으로 I am a student가 들어가야하나요? y^ 들의 loss를 계산할때만 I am a student를 써야하는거 아닌가요?
+12:07:46	 From Rushda Basir : Wouldn't vanishing gradient problem be solved using LSTM and GRU? Why do we use attention then?
+12:10:01	 From Rushda Basir : ok thankyou
+12:21:16	 From LSJ : VT는 무엇인가요?
+12:21:26	 From LSJ : V 전치
+12:26:18	 From 이재완(kaist) : machine translation 에서 training phase 다시한번설명해주실수 있으신가요?
+12:26:36	 From 이재완(kaist) : attention 안쓸때요
+12:26:54	 From 이재완(kaist) : 넵~
+12:29:34	 From 이재완(kaist) : 넵 감사합니다
+12:29:53	 From 이재완(kaist) : 교수님 그리고 attentino에서 output이 -inf~inf 가되도록해주는 안전장치가있나요?
+12:30:27	 From 이재완(kaist) : 아 넵 감사합니다~
+12:30:43	 From youngjunchoi : 감사합니다~
+12:30:45	 From 20185051 SoJung : 감사합니다~

@@ -1,0 +1,60 @@
+10:34:36	 From 20204341_박성진 : 안녕하세요~
+10:34:39	 From 20205648 Andrés Brito : Good morning
+10:34:41	 From 20185051 SoJung : 안녕하세요~
+10:34:47	 From 20204225 강정모 : 안녕하세요
+10:34:51	 From Yonghee Kim : 안녕하세요
+10:35:06	 From Jaegyun Kim : 안녕하세요
+10:35:11	 From Jaegyun Kim : 네이버 김재균
+10:35:13	 From Mario Choi : 네이버 최인식입니다
+10:35:22	 From 김인희 : 네이버 김인희 입니다
+10:35:28	 From Yonghee Kim : 네이버 김용희입니다
+10:35:29	 From Yoonjin Chung : 네이버 정윤진 입니다
+10:35:31	 From 김윤영 : 네이버 김윤영입니다
+10:35:31	 From Ju Yunsang : 네이버 주윤상 입니다
+10:35:37	 From Wonhong Yoo : 네이버 유원홍 입니다
+10:36:12	 From Jisu Jeon : 네이버 전지수 입니다
+10:38:18	 From 노윤영 4076 : 네이버 노윤영
+10:51:36	 From Jaegyun Kim : 저번 연습반 시간때, 조교님에게도
+두벡터간(forward-backward이던.. 다른 종류던..) concat과 add에 대해서 여쭤보고 제가 따로 찾아볼때도
+Add함에도 dimension이 매우 크기때문에 합해지는 내용이 섞일 가능성은 낮고
+계산시에도 메모리 측면에서 이득이 있다고 하여,
+concat보다는 add가 좀더 현실적이고 요즘에는 더 많이 쓰이는다고 하는데요..
+교수님은 어떻게 생각하시나요?
+10:55:23	 From 20194318 myungchul : 놓쳐서 그런데, downstream task의 정의를 다시 해주실 수 있을까요?
+10:56:31	 From Jaegyun Kim : 감사합니다.
+10:57:10	 From 20194318 myungchul : 아하 감사합니다. 따로
+10:57:11	 From 이재완(kaist) : 헤깔려서 그런데 fine tunning을 LM만 하고 ELMO는 안한다는건가요?
+10:57:17	 From 20194318 myungchul : upstream task는 없는 거죠?
+10:58:26	 From 이재완(kaist) : 아 감사합니다!
+11:05:48	 From 20185051 SoJung : 가운데 <D>라고 적으신 게 뭐예요?
+11:05:59	 From 20185051 SoJung : 감사합니다!
+11:11:57	 From Jisu Jeon : Are the ‘token embeddings’ one hot representations or word embeddings like glove or word2vec
+11:12:22	 From Jisu Jeon : in BERT?
+11:14:12	 From Jisu Jeon : Ok thanks!
+11:16:42	 From Jisu Jeon : Oh, then are the embeddings randomly initialized? If so, isthere a specific random initialization method for such embeddings?
+11:16:42	 From 20204225 강정모 : 30K인데 768dim까지 사용하는 이유가 있나요?
+11:17:12	 From 20204225 강정모 : 아하 감사합니다
+11:23:30	 From Ju Yunsang : NSP를 제외하고 train하면 CLS embedding이 뒤 token에서 나온 embedding을 아우를 수 있따는걸 어떻게 보장 할 수 있나요??  MLM에서 학습할때 CLS embedding을 특별하게 다루나요??
+11:28:26	 From Ju Yunsang : 아 네 감사합니다~
+11:43:14	 From youngjunchoi : Professor, Can you explain what is the ## in front of the separated words?
+11:43:18	 From Jisu Jeon : How do you encode bidirectionally in BERT?
+11:43:58	 From Jisu Jeon : Is it something to do with manipulating positional encoding?
+11:44:19	 From youngjunchoi : 아아 byte pair encoding
+11:44:20	 From youngjunchoi : 감사합니다
+11:54:08	 From Jaegyun Kim : zero-shot이라는게 어떤 의민가요?
+11:56:00	 From Jaegyun Kim : 아.. 감사합니다
+11:56:40	 From Jaegyun Kim : 그러면 좀 궁금한게.. TLDR 같은 token도 배우지 않았던건가요?
+11:57:22	 From Jaegyun Kim : 감사합니다
+11:58:12	 From Jaegyun Kim : ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+12:00:19	 From Mario Choi : fromage
+12:01:13	 From soro bedionita : fromage
+12:07:00	 From youngjunchoi : Few-shot을 통해 태스크를 새롭게 이해해내는 것인가요? 아니면 훈련하는 동안 배운 것 중 하나를 알아채는 것에 가까운걸까요?
+12:10:15	 From Jaegyun Kim : GPT3에서는 2와 비교해서 아키텍쳐 측면에서 변화는 없나요? 단순히 parameter만 많아진건가요?
+12:10:52	 From Jaegyun Kim : 1과 비교해서도요..
+12:13:17	 From Jaegyun Kim : 감사합니다
+12:18:37	 From Jaegyun Kim : 감사합니다!
+12:18:39	 From 20185051 SoJung : 감사합니다!
+12:18:40	 From 20204225 강정모 : 감사합니다!
+12:18:43	 From youngjunchoi : 감사합니다
+12:18:45	 From 20204341_박성진 : 감사합니다~
+12:18:47	 From 이재완(kaist) : 감사합니다~

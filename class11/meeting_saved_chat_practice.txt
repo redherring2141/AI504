@@ -1,0 +1,89 @@
+10:32:52	 From 20185051 SoJung : 안녕하세요~
+10:32:52	 From 박성진_20204341 : 안녕하세요!
+10:32:55	 From WonhongYoo : 안녕하세요~
+10:33:06	 From 20205648 Andrés Brito : Good morning
+10:33:16	 From Ju Yunsang : 안녕하세요 네이버 주윤상입니다
+10:33:32	 From Inhee Kim : 네이버 김인희 입니다.
+10:33:41	 From WonhongYoo : 네이버 유원홍 입니다.
+10:33:44	 From Mario Choi : 네이버 최인식입니다.
+10:33:48	 From 김윤영 : 네이버 김윤영입니다.
+10:33:52	 From ji : 네이버 전지수 입니다
+10:33:55	 From 정윤진 : 네이버 정윤진 입니다
+10:36:12	 From Jaegyun Kim : 네이버 김재균
+10:36:19	 From Yonghee Kim : 네이버 김용희입니다
+10:36:49	 From 노윤영 4076 : 네이버 노윤영입니다
+10:43:26	 From 20203210_Jiyoon_Myung : *의 역할은 뭔가요?
+10:49:51	 From 20203210_Jiyoon_Myung : attn_probs가 attn_output인건가요?
+10:51:21	 From Ju Yunsang : attn_output은 attn_weights에 value를 bmm해야하는거 아닌가요??
+10:54:52	 From Ju Yunsang : attn_outputs 계산할때 value는 transspose 해야하는 것 같은데 맞을까요?
+10:56:25	 From Ju Yunsang : Q,K 랑 동일하게 하려고 했습니다~
+10:56:47	 From 20185051 SoJung : key는 왜 transpose를 하는건가요?
+10:57:52	 From Ju Yunsang : 네 감사합니다~
+11:01:56	 From Jaegyun Kim : causal 환경이 어떤 의민지 더 설명 부탁드립니다.
+11:04:21	 From Jaegyun Kim : 감사합니다
+11:06:57	 From 20185051 SoJung : contigous 가 무슨 역할인가요?
+11:07:18	 From __ : 쭉 잇게 만드는거아닐까요－（
+11:07:20	 From Rushda Basir : why is attn_output permuted?
+11:07:25	 From __ : contiguous 하게
+11:08:36	 From 20185051 SoJung : 감사합니다!
+11:08:45	 From __ : @Rushda to change around the dimensions as we desire
+11:09:03	 From Rushda Basir : Thanks
+11:11:13	 From 20185051 SoJung : b2가 residual 인가요?
+11:11:46	 From 20185051 SoJung : 넵
+11:14:20	 From soro bedionita : i thoingth that the activation should be after w_1*x
+11:14:38	 From 박성진_20204341 : I thought too..
+11:15:29	 From soro bedionita : okay
+11:15:37	 From __jeong : same as:
+x = self.w_1(x)
+x = self.activation(x)
+11:16:21	 From 20185051 SoJung : residual을 왜 더하는지 모르겠습니다ㅜ
+11:16:27	 From 이재완(kaist) : F.dropout의 역할은 무엇인가요?
+11:17:12	 From 20185051 SoJung : 아..! 감사합니다!
+11:17:30	 From __jeong : dropout: a way to regularize by zeroing out some during training
+11:18:13	 From 이재완(kaist) : 감사합니다
+11:19:15	 From Mario Choi : 2*i예요 i예요? 
+11:19:16	 From Jaegyun Kim : detach를 하는 이유는 학습하지 않기 위함인가요?
+11:19:20	 From Mario Choi : 10000 ** 에
+11:19:40	 From Mario Choi : 그 equation왼쪽에
+11:19:48	 From Mario Choi : for I in range에서
+11:19:51	 From 20185051 SoJung : i 아닌가요?
+11:19:55	 From Mario Choi : 0,emed_dim,2여서
+11:20:06	 From Mario Choi : 2i가 i 로 되는 거 아닌가요?
+11:20:08	 From Mario Choi : 넵
+11:20:18	 From Mario Choi : 아 반대인거같아요
+11:20:21	 From 20185051 SoJung : for 문이 ,2니까
+11:20:27	 From 20185051 SoJung : i인거 같아요
+11:20:33	 From Mario Choi : 아니면 for i in range (0, embed_dim/2)
+11:20:34	 From Jaegyun Kim : 네 저도 소정님과 같은 의견입니다
+11:20:43	 From Jaegyun Kim : i는 2배수로 올라갑니다.
+11:20:55	 From Jaegyun Kim : 재질문 드립니다. detach를 하는 이유는 학습하지 않기 위함인가요?
+11:21:36	 From Jaegyun Kim : 아..감사합니다
+11:32:02	 From 20185051 SoJung : 클램핑 첫번째 줄 잘 모르겠습니다. torch.finfo..? 부분이요
+11:32:28	 From 20185051 SoJung : 그 밑줄이요
+11:32:44	 From 20185051 SoJung : 넵
+11:33:02	 From 20185051 SoJung : 아..! 감사합니다ㅎㅎ
+11:33:12	 From Mario Choi : final_layer_norm 쓸 때 multi-head attn add&norm operation처럼 residual+ 다시 안해도 되나요?
+11:33:49	 From Mario Choi : 아. 
+11:33:54	 From Mario Choi : 감사합니다
+11:34:30	 From Mario Choi : 넵, 감사합니다 :)
+11:35:22	 From 20185051 SoJung : multi-head에도 위쪽 구현에 포함되어 있는게 맞나요?ㅜㅜ
+11:36:13	 From 20185051 SoJung : residual이요
+11:36:32	 From 20185051 SoJung : 넵
+11:36:42	 From 20185051 SoJung : 아..! 한줄을 놓쳤습니다..ㅎㅎ
+11:36:44	 From 20185051 SoJung : 감사합니다
+11:37:53	 From Jaegyun Kim : embed_pos와 inputs_embeds를 concat하는게 아니였나요?
+11:39:45	 From Jaegyun Kim : 품질에 전혀 영향이 없나요? 벡터가 혹시 뭉개지지 않을까 싶어서요..
+11:40:27	 From Rushda Basir : How is n repetition implemented in your code?
+11:40:33	 From Jaegyun Kim : 감사합니다
+11:41:24	 From Rushda Basir : Thankyou
+11:50:33	 From Jaegyun Kim : 여기엔 clamp가 없네요?
+11:51:22	 From Jaegyun Kim : decoder layer수에 depend하겠군요!
+11:51:35	 From Jaegyun Kim : 감사합니다.
+11:53:17	 From Rushda Basir : what is cross attention scores?
+11:54:09	 From Rushda Basir : Thankyou
+12:02:44	 From 20185051 SoJung : 감사합니다!
+12:02:44	 From Jaegyun Kim : 감사합니다!
+12:02:52	 From 박성진_20204341 : 감사합니다~
+12:02:52	 From 20205648 Andrés Brito : Thank you
+12:03:03	 From user : 감사합니다.
+12:03:04	 From Rushda Basir : Thankyou

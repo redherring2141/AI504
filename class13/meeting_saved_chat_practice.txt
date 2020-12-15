@@ -1,0 +1,51 @@
+10:33:37	 From 20204294_김주형 : 안녕하세요
+10:33:41	 From 20209007 최상범 : 안녕하세ㅛ
+10:33:41	 From 20203210_Jiyoon_Myung : 안녕하세요
+10:33:42	 From Ju Yunsang : 안녕하세요 네이버 주윤상입니다
+10:33:42	 From 20205648 Andrés Brito : Good morning
+10:33:46	 From 20185051 SoJung : 안녕하세요~
+10:33:47	 From 김인희 : 네이버 김인희 입니다
+10:33:50	 From 황시환 (20204618) : 안녕하세요~
+10:33:54	 From 노윤영 4076 : 안녕하세요 내이버 노윤영 입니다
+10:33:55	 From 김윤영 : 네이버 김윤영입미나
+10:34:03	 From Wonhong Yoo : 네이버 유원홍 입니다
+10:35:33	 From 20185051 SoJung : yes
+10:35:35	 From 20205648 Andrés Brito : yes
+10:38:56	 From Yonghee Kim : 네이버 김용희입니다
+10:48:53	 From 20185051 SoJung : ipdb.set_trace() 이 부분 역할이 뭔가요??
+10:49:37	 From TA_Seongjun : 아 pdb set_trace() 와 같은건데, 디버깅하실때 쓰시면 됩니다.
+10:50:18	 From TA_Seongjun : uncomment하시고, next나 step, print 같은 명령어로 코드의 동작을 자세히 보실 수 있습니다.
+10:50:40	 From 20185051 SoJung : 감사합니다!
+10:52:36	 From JunMin Lee : 위에서 weight들에게 0.01씩 곱해주시는 이유가 있나요?
+10:53:28	 From TA_Seongjun : 제가 연산결과가 좀 더 잘 나오게 하기 위해 조정한 거라 큰 의미 없습니다
+10:53:54	 From __ : Degree Mat 에서 x axis index 에 －-1씩 해주는 이유가 뭔가요?
+10:54:39	 From __ : 아 edges()에서 1부터시작하는군요
+11:03:58	 From 이재완(kaist) : self.weight 를 왜 nn.Parameter로 설정하는지 알수 있을까요? nn.Linear로 weigth 로 만들어줘도 되지않나요?
+11:05:15	 From TA_Seongjun : nn.Linear로 weight를 만든다는게 어떤 뜻일까요??
+11:06:29	 From 이재완(kaist) : 일단, GCN이 D^-1A'XW를 구현하는데 self.weight 이  이 W를 의미하는건 맞는건가요? 
+11:07:17	 From 이재완(kaist) : 여기서 쓰이는 w를 nn.Linear로는 설정을 할수 없나궁금해서 여쭤봅니다
+11:07:50	 From 이재완(kaist) : 넵 알겠습니다~
+11:13:44	 From 20194318 myungchul : nll loss를 혹시 설명해주실 수 있나요?
+11:14:14	 From 20194318 myungchul : 네 알겠습니다.
+11:18:33	 From JunMin Lee : 위에서 재원님 질문이 GraphConvolution 클래스의 __init__ 부분에서 self.weight = nn.Linear() 대신 self.weight = nn.Parameter ~ 라고 한 이유를 물으시는거같습니다
+11:18:54	 From JunMin Lee : 저도 궁금한데 둘 차이가 있을까요?
+11:19:55	 From JunMin Lee : 넵 감사합니다!
+11:19:56	 From 이재완(kaist) : 감사합니다
+11:20:20	 From JunMin Lee : 감사합니다
+11:20:41	 From Jaegyun Kim : 네이버 김재균입니다. 약간 늦게 들어와서 이제 코멘트 할게요
+11:20:41	 From 20185051 SoJung : Homework가 저 부분을 공부해보라는 말씀이신건가요...?
+11:20:58	 From 20185051 SoJung : 감사합니다!
+11:21:35	 From Jaegyun Kim : 오늘 수업은 끝난건가요?
+11:22:27	 From 20185051 SoJung : 감사합니다~!!
+11:22:54	 From 20185051 SoJung : 맞습니다
+11:23:00	 From 20203210_Jiyoon_Myung : 수목만 없는걸로 알고있습니다
+11:23:13	 From __ : 전체다 없는걸로 알고있습니다..
+11:23:18	 From 20203210_Jiyoon_Myung : 수업마다 다른가보네요
+11:23:20	 From 20185051 SoJung : 과목별로 달라서...
+11:24:03	 From __ : optional class로 다음주가 어떨까요
+11:24:06	 From 20185051 SoJung : 저는 다다음주가 더 좋습니다ㅎㅎ
+11:24:09	 From 20203210_Jiyoon_Myung : 전 다음주가 좋습니다
+11:24:22	 From Hyeonseong Kim : 다음주에 하는 것을 선호합니다
+11:24:52	 From 이재완(kaist) : 감사합니다~
+11:25:21	 From 20185051 SoJung : 감사합니다~
+11:25:24	 From 20205648 Andrés Brito : Thank you

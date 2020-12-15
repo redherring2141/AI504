@@ -1,0 +1,104 @@
+10:30:32	 From 20205470 Soyeon Kim : 안녕하세요
+10:30:34	 From 박성진 20204341 : 아년ㅇ하세요
+10:30:37	 From 기계_20203043_김경현 : 안녕하세요
+10:30:38	 From 박성진 20204341 : 안녕하세요
+10:30:43	 From 20185051 김소정 : 안녕하세요
+10:30:44	 From Minkyu Jeong : 안녕하세요
+10:30:49	 From 2025648 Andrés Brito : Good morning
+10:30:51	 From 20204871 YH Tan : Morning~
+10:30:56	 From 황시환 (20204618) : 안녕하세요!
+10:35:38	 From Ju Yunsang : 주윤상 입니다
+10:35:40	 From naver : 김인희 입니다
+10:35:45	 From Yoonjin Chung : 정윤진 입니다
+10:36:27	 From 2025648 Andrés Brito : yes
+10:36:27	 From Yoonjin Chung : 저번 시간에도 왔었는데 조금 늦게 와서 이름 말하는 게 뭔지 몰랐네요. 말씀을 못드렸습니다.
+10:36:27	 From 20204315_나지혜 : yes
+10:36:27	 From 박성진 20204341 : yes~
+10:36:29	 From 20185051 SoJung : 네
+10:36:53	 From Yonghee Kim : yes?
+10:37:06	 From jaegyunkim : 김재
+10:37:08	 From jaegyunkim : 김재균
+10:39:31	 From 20175499_이성준 : replaced word?
+10:39:35	 From 20194318 myungchul : could you explain one more about tokenize?
+10:39:36	 From 20208220 이원준 : You mean "replaced_word" not replaced word ?
+10:39:40	 From 20175499_이성준 : sentence error
+10:40:04	 From 20175499_이성준 : thank you 이원준
+10:41:08	 From 20208220 이원준 : What is token?
+10:42:57	 From 20175499_이성준 : 조교님, 그 다음 함수에서 error가 나오는데요
+10:42:57	 From 20208220 이원준 : "NameError: name 'pattern' is not defined" comes out when running next block..
+10:45:46	 From 20208220 이원준 : what do "re.sub" mean?
+10:46:58	 From 황시환 (20204618) : sentence  스펠링
+10:47:00	 From 황시환 (20204618) : 잘못됐습니다
+10:47:15	 From Hyun-Kyung Kim : why you replace [.] to . instead of omitting or change it to same marks?
+10:47:26	 From 20208220 이원준 : ## Your tokenized result :  ['This', 'sentence', 'should', 'be', 'tokenized', 'properly', '.']Tokenizing test passed!## Your tokenized result :  ["Jhon's", 'book', 'is', 'not', 'popular', ',', 'but', 'he', 'loves', 'his', 'book', '.']Tokenizing test passed!## Your tokenized result :  ['.', ',', '!', '?', ',', ',', "'-4", '.', '!']Tokenizing test passed!
+10:51:00	 From 20185051 SoJung : Delete word below min_freq 를 왜 하는지 다시 설명 부탁드려요ㅜ
+10:51:01	 From 박영서 : def build_vocab( sentences: List[List[str]], min_freq: int) -> Tuple[List[str], Dict[str, int], List[int]]: 함수 선언이 이렇게 되는건 처음봐서 그런데 어떻게 되는것인지 설명해주실 수 있을까요?
+10:51:15	 From soro bedionita : could you show again the tokenize function
+10:51:55	 From 박영서 : 감사합니다.
+11:01:06	 From 20208220 이원준 : slower... plz
+11:01:53	 From Rushda Basir : can you please explain what the function is doing?
+11:01:56	 From 20208220 이원준 : good
+11:03:12	 From Rushda Basir : ok. Thankyou
+11:03:16	 From 20208220 이원준 :     flatten = lamda l: [items for sublist in L for item in sublist] # hint : [["This", "sentence", "be", "tokenized", "propery", "."], ["Jhon", "'s", "book", "is", "not", "popular", ",", "but", "he", "loves", "his", "book", "."]]                    ^
+11:03:23	 From Yonghee Kim : Suggest shorter implementations:sentence = re.sub('([.,!?])', ' \1 ', sentence).split()flattern = lambda l: sum(l, [])
+11:03:51	 From 20208220 이원준 : Will you upload solution file soon?
+11:05:55	 From jaegyunkim : build vocab 다시 보여주실수 있으신가요?
+11:05:58	 From G : please show the previous code (written by TA)
+11:08:44	 From 20185051 SoJung : try except 부분 설명 혹시 부탁드려도 될까요?
+11:09:05	 From 20185051 SoJung : 한국어로 설명해주시면 더 감사합니다ㅎㅎ
+11:09:54	 From 20185051 SoJung : KeyError는 자동으로 뜨는건가요?
+11:09:57	 From __ : dictionary 에 있으면 +1, 없으면 1로 하는거입니다~
+11:10:18	 From 20185051 SoJung : 넵ㅎㅎ 감사합니다~
+11:15:46	 From Rushda Basir : can you repeat what is .75?
+11:16:06	 From Rushda Basir : ok. Thanks
+11:18:15	 From Mario Choi : 혹시 채팅창에도 comment 붙여주실 수 있을까요?
+11:18:25	 From TA_양성준 : # one batch vector extraction
+    # matrix multiplication with batched_center_vectors and outside_vectors
+    # pad token preprocessing for not affecting loss function
+
+    # use softmax function
+    # repeat outside_word_size times
+    # pad_masking
+
+    # element wise multiplication of log prediction and pad_masking
+    # get loss
+
+11:18:29	 From Mario Choi : 감사합니다
+11:26:51	 From 박영서 : 코드도 같이 채팅창에 복사해주실 수 있나요?
+11:27:36	 From TA_양성준 :     batched_center_vectors = center_vectors[center_word_index] # one batch vector extraction
+    preds = torch.matmul(batched_center_vectors, torch.t(outside_vectors)) # matrix multiplication with batched_center_vectors and outside_vectors
+    preds[:, 0] = float('-inf') # pad token preprocessing for not affecting loss function
+
+    log_preds = -F.log_softmax(preds, dim=1) # Use Softmax function
+    batched_indices = torch.repeat_interleave(torch.arange(batch_size), outside_word_size) # repeat outside_word_size times
+    pad_mask = (outside_word_indices != 0) # pad -> false
+
+    losses = log_preds[batched_indices, outside_word_indices.flatten()].view(batch_size, -1) * pad_mask # element wise
+    losses[losses != losses] = 0 # nan -> 0
+    losses = torch.sum(losses, 1)
+11:34:38	 From 20185051 SoJung : 밑에 주신 Homework는 그대로 실행하면 동작 안되고 참고해서 하라는 말씀이신거죠?
+11:35:12	 From 20185051 SoJung : 감사합니다!
+11:35:36	 From 20194318 myungchul : word embedding이라는 게 주어진 text를 tokenize하는 방법이고, 그 중에 skip gram은 word freq 기반의 embedding 방법인데,
+11:35:49	 From 20194318 myungchul : 방금은 영화 text에 맞게 학습을 다시 하는 거죠?
+11:36:27	 From 20194318 myungchul : 아하 감사합니다. 
+11:37:58	 From 20203210_Jiyoon_Myung : woman을 더해줘야 하 지 않나요?
+11:38:13	 From 20185051 SoJung : king + queen 이 되어서요
+11:38:19	 From 20203210_Jiyoon_Myung : queen 대신 woman 말씀드린거였어요!
+11:42:43	 From 2025648 Andrés Brito : thank you
+11:42:43	 From 20194318 myungchul : 혹시 바로 solution 올려주실 수 있으신가요? ㅎㅎ
+11:42:43	 From 20203389 유명성 : loss 함수부분 다시 설명해주실 수 있나요?
+11:44:07	 From 20203389 유명성 : 아 넵 감사합니다!!
+11:45:07	 From 20194318 myungchul : 모든 벡터를 다 계산하기에 cost가 커서 negative sampling을 한다고 이해했는데, 혹시 negative sampling 구체적인 방법에 대해서 다시 설명해주실 수 있으신가요?
+11:46:49	 From 20194318 myungchul : negative sample이랑 postive sample의 정의가
+11:47:07	 From 20194318 myungchul : 여기서는 어떤 의미인가요?
+11:47:34	 From 20194318 myungchul : 감사합니다. ㅎㅎㅎ
+11:48:05	 From 20185051 SoJung : 저도 부탁드립니다.thwjd8114@kaist.ac.kr
+11:48:33	 From 박성진 20204341 : 감사합니다!!
+11:48:48	 From 20185051 SoJung : 감사합니다!
+11:50:37	 From 20204225 강정모 : 감사합니다
+11:50:42	 From 20208076 Kyunghwan sohn : 감사합니다!
+11:50:44	 From 20194318 myungchul : 감사합니다. ㅎㅎ
+11:50:50	 From 20185051 SoJung : 수고하셨습니다ㅎㅎㅎ
+11:50:51	 From Yonghee Kim : 수고하셨습니다
+11:50:52	 From yjk_20205015 : 감사합니다
+11:50:57	 From Minkyu Jeong : 감사합니다

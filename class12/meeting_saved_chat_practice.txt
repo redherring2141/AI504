@@ -1,0 +1,67 @@
+10:32:13	 From JUNMIN LEE : 안녕하세요
+10:32:28	 From 20205648 Andrés Brito : Good morning
+10:32:30	 From 노윤영 4076 : 안녕하세요
+10:32:31	 From 20185051 김소정 : 안녕하세요~
+10:32:36	 From Yonghee Kim : 안녕하세요
+10:32:37	 From 20204225 강정모 : 안녕하세요~
+10:33:01	 From Mario Choi : 네이버 최인식입니다
+10:33:20	 From Yoonjin Chung : 네이버 정윤진 입니다
+10:33:26	 From Jaegyun Kim : 네이버 김재균
+10:33:28	 From 노윤영 4076 : 네이버 노윤영 출석입니다
+10:33:45	 From 김인희 : 네이버 김인희 입니다
+10:33:49	 From Yonghee Kim : 네이버 김용희입니다
+10:33:53	 From Jisu Jeon : 네이버 전지수입니다
+10:33:55	 From 김윤영 : 네이버 김윤영입니다
+10:35:13	 From user : 네이버 주윤상 입니다
+10:35:19	 From Jisu Jeon : 잘들립니다
+10:35:20	 From JUNMIN LEE : 잘 들립니다
+10:35:21	 From 20205466 김무종 : 잘 들립니다
+10:38:52	 From Wonhong Yoo : 네이버 유원홍 입니다
+10:41:37	 From 20185051 SoJung : mute all 부탁드립니다
+10:41:54	 From 20185051 SoJung : 감사합니다!
+10:42:02	 From Rushda Basir : can you please explain itos again?
+10:43:54	 From Rushda Basir : ok. Thankyou!
+10:44:12	 From Jisu Jeon : Could you explain what words with ## are?
+10:49:43	 From Jaegyun Kim : 15%의 확률로 마스킹만 하는게 아니라 왜 random word도 넣고, 기존 word로도 납두나요??
+10:50:42	 From Jaegyun Kim : random을 넣는건 학습 데이터를 망치는거 같은데..
+10:50:52	 From Jaegyun Kim : 저게 더 robust하게 하는게 맞나요??
+10:51:08	 From 20185051 SoJung : 15% 제외한 85%도 그대로인거죠?
+10:51:21	 From Jaegyun Kim : 알겠습니다.
+10:51:28	 From 20185051 SoJung : 넵 감사합니다
+10:52:11	 From JUNMIN LEE : 실제로 논문에서 15% 중 아주 일부만 랜덤으로 교체한다고 하여 모델이 망가지지 않는다고 언급 되는걸로 알고있습니다!
+10:52:23	 From Jaegyun Kim : 아 감사합니다 정민님
+10:52:39	 From Jaegyun Kim : 신기하긴하네요
+10:58:43	 From user : positionalEmbedding은 range(0,max_len)값인 줄 알았는데 positional encoding과 구현이 동일한가보네요
+10:59:21	 From user : 네 감사합니다~
+11:06:24	 From user : (2,10,768) 106457088
+11:13:03	 From Jisu Jeon : You mean CLS is the label right?
+11:18:40	 From LSJ : 소프맥스 결과를 CLS와 비교하는 것 아닌가요?
+11:18:47	 From Jisu Jeon : For NSP, why not Linear(hidden_size, 1) + sigmoid()?
+11:18:54	 From LSJ : x[:, 0]의 의미를?
+11:19:36	 From LSJ : bert에서 판정한 다음 문장인지
+11:20:47	 From LSJ : 아~, 네 감사합니다.
+11:21:11	 From Jisu Jeon : Then loss function I think will be BCELoss instead of NLLLoss
+11:21:29	 From Jisu Jeon : In case if you are using sigmoid classifier
+11:37:16	 From Jisu Jeon : I think u should set truncation=True for tokenizer.encode_plus()
+11:37:32	 From Jisu Jeon : To remove that error message
+11:39:00	 From LSJ : 160?
+11:39:07	 From LSJ : 160은 무엇을 뜻하나요?
+11:39:23	 From LSJ : 아~
+11:39:29	 From LSJ : 알겠습니다.
+11:40:01	 From Rushda Basir : what happens when truncation = False?
+11:41:02	 From Rushda Basir : ok. Thankyou
+11:43:29	 From Rushda Basir : what is the use of pooled output?
+11:43:29	 From LSJ : 32는 무엇을 뜻하나요?
+11:44:35	 From LSJ : 32 중 하나가 CLS 인 건가요?
+11:44:46	 From LSJ : 네, 감사합니다.
+11:49:45	 From Rushda Basir : can you please explain pooled output?
+11:51:13	 From Rushda Basir : why do we need it.?
+11:52:46	 From Rushda Basir : Right. Thankyou.
+11:53:24	 From 20185051 SoJung : 감사합니다!
+11:53:28	 From LSJ : 감사합니다.
+11:53:33	 From 20205466 김무종 : 감사합니다
+11:53:34	 From 20204225 강정모 : 감사합니다
+11:53:40	 From 이재완(kaist) : 감사합니다
+11:53:41	 From JUNMIN LEE : 감사합니다
+11:53:42	 From Rushda Basir : Thankyou!
+11:53:44	 From 20205648 Andrés Brito : Thank you

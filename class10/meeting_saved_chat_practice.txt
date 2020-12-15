@@ -1,0 +1,74 @@
+10:30:01	 From Wonhong Yoo : 안녕하세요~
+10:30:05	 From 20205648 Andrés Brito : Good morning
+10:30:07	 From 기계_20203043_김경현 : 안녕하세요
+10:31:56	 From 노윤영 4076 : 네이버 노윤영
+10:32:05	 From 김윤영 : 네이버 김윤영입니다
+10:32:11	 From Mario Choi : 네이버 최인식
+10:32:22	 From Inhee Kim : 네이버 김인희 입니다
+10:32:24	 From Wonhong Yoo : 네이버 유원홍 입니다
+10:32:28	 From Yonghee Kim : 네이버 김용희입니다
+10:34:35	 From Jaegyun Kim : 네이버 김재균
+10:39:47	 From 기계_20203043_김경현 : import하는 부분 이름이 뭐였죠?
+10:39:50	 From 장하영 (20203805) : import부분 다시 보여주세요
+10:39:51	 From 20204597_최환일 : 글자 크기 조금 키워주실 수 있나요 
+10:40:04	 From 20204597_최환일 : 감사합니다
+10:40:07	 From __ : img = img_as_ubyte(resize(img, (256, 256)))
+10:40:07	 From 이건(20203423) : Could you upload the revised version later?
+10:40:08	 From __ : from skimage import img_as_ubyte
+10:40:08	 From 20185051 SoJung : 넵
+10:40:32	 From 이건(20203423) : thanks
+10:40:37	 From Ying Hui : Can you increase the font size a little bit?
+10:40:53	 From Ying Hui : Thank you!
+10:40:58	 From Jaegyun Kim : preprocessing하는데 다시 보여주실수 있으세요?
+10:41:54	 From 황시환 (20204618) : 혹시 첫번째 셀 실행시키면 Permission denied가 뜨는데 해결방법이 있을까요..?
+10:42:00	 From Jaegyun Kim : 네 저도 같은 상황입니다
+10:43:38	 From 20185051 SoJung : 저요
+10:43:41	 From 20204507이현기 : 네
+10:43:41	 From 박성진_20204341 : 해당 드라이브 링크 들어가서 download anyway 하면 받아지는것같긴 합니다.  혹시 받아야 하는 파일이
+10:43:43	 From Rushda Basir : yes
+10:43:43	 From 유명성 : 저는 잘 받아졌습니다
+10:43:45	 From 이재완(kaist) : 저도 다운됬어요
+10:43:46	 From 박성진_20204341 : practice_week10.zip 일까요?
+10:43:46	 From __ : it was possible earlier
+10:44:32	 From 20204887_Beng Ern Low : I had to click on the link (after 'Permission denied:....) and download it manually
+10:45:45	 From __ : https://drive.google.com/uc?id=1dTaKZ1h__X26uIzyo388L7cHO4TjC0pX에서 매뉴얼리 다운로드하는게 제일빠를것같네요
+10:53:28	 From 20185051 SoJung :     assert dataset in {'coco', 'flickr8k', 'flickr30k'}지금 세 종류 데이터를 다 가지고 있는 상태인가요???
+10:53:35	 From Rushda Basir :  if len(img.shape) == 2 why do we use this?
+10:54:54	 From 20185051 SoJung : 감사합니다!
+10:56:23	 From Rushda Basir : Right. Thanks!
+11:07:54	 From Jaegyun Kim : 왜 5이후의 layer만 학습하는 건가요?
+11:08:49	 From Jaegyun Kim : 감사합니다
+11:09:27	 From 20204597_최환일 : required grad를 5번째 layer까지만 false 해주는거랑 저렇게하는 거랑 다른가요? 
+11:11:50	 From 20204597_최환일 : 네 감사합니다.
+11:12:37	 From 이재완(kaist) : sp
+11:12:37	 From 박성진_20204341 : yes
+11:12:40	 From Rushda Basir : yes
+11:12:40	 From 20205648 Andrés Brito : yes
+11:15:26	 From 이재완(kaist) : nn.Softmax(dim=1)에서 dim=1 이 차원을 1로 만들어주겠다는건가요?
+11:16:39	 From 이재완(kaist) : 아 감사합니다
+11:33:24	 From 20204507이현기 : decoder with attention implement해야 하는 부분 solution 다시 보여 주실 수 있나요
+11:33:41	 From 20204507이현기 : 아 방금전에
+11:33:46	 From 20204507이현기 : 했던 부분
+11:33:57	 From 20204507이현기 : 네
+11:34:30	 From soro bedionita : what is lambda value
+11:44:58	 From 20204597_최환일 : train 함수에 있는 clip_gradient 함수는 어디 정의 돼 있나요? 
+11:45:36	 From 20204597_최환일 : 아 감사합니다. 
+12:02:40	 From 20204597_최환일 : fine tuen 함수에서 required grad를 5번째 layer까지만 false 해주는거랑 저렇게하는 거랑 다른가요?에 대한 질문에대해서 정정해서 다시 질문 드리겠습니다.제 질문은 전체 resnet.parameters()의 requires_grad = False로 하고 다시 5번째 layer부터 requires_grad = True로 만드는 것과,처음부터 5번째 이전 layer까지만 requires_grad = False 로 해 주는 것이 차이가 있는지 궁금합니다.서로 같다면 효율적인 면에서 아래 방법이 더 좋을 것 같아서 질문합니다.
+12:04:29	 From 박성진_20204341 : 그렇다면 저희 오늘 사용한 코드에서
+12:04:38	 From Mario Choi : Encoder class 부분 다시 보여주실 수 있나요?
+12:04:41	 From 박성진_20204341 :         for p in self.resnet.parameters():            p.requires_grad = False        for c in list(self.resnet.children())[5:]:            for p in c.parameters():                p.requires_grad = 
+12:04:42	 From 박성진_20204341 : 이동작과
+12:04:54	 From 박성진_20204341 : 처음부터 바로
+12:04:55	 From 박성진_20204341 :         for c in list(self.resnet.children())[:5]:            for p in c.parameters():                p.requires_grad = False
+12:05:16	 From 박성진_20204341 : 이렇게 해도 동일하게 freeze되지 않나요?
+12:05:49	 From 박성진_20204341 : 넵넵 
+12:06:43	 From 박성진_20204341 : 그럼 저 사이에 조건문이 또
+12:06:47	 From 박성진_20204341 : 붙는건가요?
+12:06:49	 From 20204597_최환일 : finetune 함수가 call 돼야 저것도 실행되니까 내부는 상관없지 않은가요???
+12:06:55	 From 박성진_20204341 : 아하.. 그래서 햇갈렸던것같아요
+12:07:01	 From 박성진_20204341 : 감사합니다!
+12:07:10	 From 20204597_최환일 : 아 감사합니다 ㅠㅠ
+12:07:49	 From 이재완(kaist) : 감사합니다
+12:10:08	 From 20185051 SoJung : 감사합니다!
+12:10:13	 From 장하영 (20203805) : 감사합니다.
+12:10:17	 From Wonhong Yoo : 감사합니다~

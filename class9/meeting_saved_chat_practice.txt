@@ -1,0 +1,96 @@
+10:29:14	 From 박성진 20204341 : 안녕하세요
+10:29:20	 From Wonhong Yoo : 안녕하세요~
+10:29:22	 From 20185051 김소정 : 안녕하세요~
+10:29:23	 From 20205648 Andrés Brito : Good morning
+10:35:59	 From Ju Yunsang : 주윤상 입니다
+10:36:04	 From Yonghee Kim : 김용희 입니다
+10:36:05	 From 정윤진 : 정윤진 입니다
+10:36:07	 From Jaegyun Kim : 김재균입니다
+10:36:07	 From Wonhong Yoo : 네이버출석: 유원홍 입니다.
+10:36:11	 From 김윤영 : 김윤영입니다
+10:36:35	 From 박성진 20204341 : 네~
+10:36:52	 From 20185051 SoJung : 들립니다
+10:36:54	 From 이재완(kaist) : 들립니다
+10:36:54	 From Wonhong Yoo : 잘 들립니다~
+10:36:57	 From 박성진 20204341 : 들립니다~
+10:36:58	 From 곽영준 : 들립니다
+10:40:07	 From LSJ : num_layer의 뜻이?
+10:40:17	 From 노윤영 4076 : 네이버:노윤영
+10:40:19	 From LSJ : 단어가 5개여서 h1~h5인건가요?
+10:40:27	 From LSJ : 5개이면
+10:40:42	 From LSJ : 그때의 num_layer는
+10:40:47	 From LSJ : 네
+10:44:25	 From 이재훈 : batch의 개념이 조금 헷갈리는데요, 예를들어 input size 가 (2, 5, 3) 이라면, 동일한 단어의 개수를 갖는 문장 2개가 batch 로 묶여서 input 으로 들어오는 것인가요?
+10:44:54	 From LSJ : 단어5개 --> h1~h5가 있으면 h1~h4는 출력하지 않는 건가요
+10:45:08	 From 이재훈 : 아 네 그렇다면 각 배치에는 동일한 단어의 개수만 담길수 있는 제약이 있다고 이해되는데 맞나요~?
+10:45:52	 From LSJ : 네, 감사합니다.
+10:46:10	 From 이재훈 : 아 네 감사합니다
+10:46:37	 From 20203210_Jiyoon_Myung : batch_first 가 False이면 어떻게 되는건가요?
+10:46:40	 From 20185051 SoJung : num_layer는 1 또는 2만 가능한건가요?
+10:47:34	 From 20203210_Jiyoon_Myung : 감사합니다
+10:47:56	 From 20185051 SoJung : 감사합니다
+10:48:43	 From 박성진 20204341 : 안작습니다
+10:48:50	 From 20185051 SoJung : 좀 키워주시면 더 좋을 것 같습니다
+10:48:53	 From 5500 : 잘 보입니다
+10:51:37	 From 이재완(kaist) : self.init_hidden()은 정의 안해줘도되나요?
+10:51:54	 From 이재완(kaist) : 아 함수로 정의되있군요 죄송합니다
+10:52:16	 From 20185051 SoJung : 글씨 10%만 키워주실 수 있을까요?
+10:52:38	 From 20185051 SoJung : 감사합니다!
+10:56:06	 From 김윤영 : Rnn 쪽 코드 보여주실 수 있으실까요?
+10:56:22	 From 김윤영 : 감사합니다!
+10:57:30	 From 곽영준 :  init hidden 에서 h0는 항상 zero tensor인가요?
+10:58:05	 From 곽영준 : 감사합니다.
+10:59:49	 From Jaegyun Kim : 0 for padding
+11:00:24	 From LSJ : 왜 0를 패딩해야 하나요?
+11:00:25	 From 20205470 Soyeon Kim : I don't understand zero padding..
+11:00:38	 From 20205470 Soyeon Kim : please explain this one more?
+11:00:42	 From 20185051 SoJung : 0을 패딩으로 사용하기 위해서 비위놓는건가요?
+11:00:48	 From Rushda Basir : can you explain again regarding index?
+11:02:08	 From 20185051 SoJung : 감사합니다!
+11:02:13	 From 20209007 최상범 :  how to handle if it exceeds the batch size?
+11:02:20	 From LSJ : 몇개를 패딩할지 알 수 없는 것은 아닌가요?
+11:02:54	 From Rushda Basir : oh thankyou!
+11:03:16	 From LSJ : 예에서는 1개차이
+11:03:27	 From 20209007 최상범 : what happens if the input word size exceeds the minimum batch size?
+11:03:28	 From LSJ : I am a girl
+11:03:29	 From 곽영준 : 가장 긴 입력이 먼지 미리 알아야겠네요? 패딩을 하려면...
+11:03:53	 From LSJ : 네, 감사합니다.
+11:03:56	 From 곽영준 : 감사합니다.
+11:04:37	 From 20209007 최상범 : I confused little bit but That also answer to my question also Thanks!
+11:05:26	 From 20185051 SoJung : 패딩은 보통 앞쪽에 붙이나요?
+11:06:15	 From 20185051 SoJung : 감사합니다!
+11:08:11	 From 곽영준 : 영상입력으로 cnn 사용할때는 노말라이즈나, 어그멘테이션 등을
+입력단에서 사용했던거 같은데요...
+nlp에서는 어그멘테이션이나 노말라이즈를 안하나요?
+11:10:49	 From 곽영준 : 감사합니다
+11:10:59	 From Phone : 단어 벡터는 픽셀값 같은 continuous value가 아니므로 노말라이즈 할 필요가 없습니다. 오그멘테이션도 일단 주류는 아닙니다.
+11:11:23	 From Yonghee Kim : if review_len <= seq_length 같습니다
+11:11:33	 From soro bedionita : what do we do with the remain sequence if it is longueur than sequence length?
+11:11:37	 From 박성진 20204341 : line 15
+11:11:44	 From 20203210_Jiyoon_Myung : if문에서 len이 빠졌습니다
+11:17:17	 From LSJ : +1이 패딩을 위한 것이라는 부분 한번 더 설명부탁드립니다.
+11:19:42	 From Jaegyun Kim : How do you solve the overfitting case?
+11:21:50	 From Jaegyun Kim : 네 감사합니다.
+11:31:00	 From 20203210_Jiyoon_Myung : hidden[0]에 [0]이들어가는 이유가 뭔가요?
+11:36:06	 From 20209007 최상범 : Is there specific reason for only using abbreviation penalty?
+11:37:06	 From 20203210_Jiyoon_Myung : encoder_hidden[-1]?
+11:39:30	 From 20203210_Jiyoon_Myung : training에서는 원래 이전 결과가아닌 true input을 넣어주는것 아니었나요?
+11:39:56	 From 20203210_Jiyoon_Myung : 넵 감사합니다
+11:40:15	 From Jaegyun Kim : teacher forcing이 true input을 넣어주는게 아닌가요?
+11:40:32	 From Rushda Basir : how did you adjust he ratio in the code?
+11:40:42	 From Rushda Basir : *the
+11:41:18	 From Rushda Basir : oh ok. thanks
+11:41:30	 From Jaegyun Kim : 여기서 decoder_input이 tru input인가요?
+11:41:52	 From Jaegyun Kim : 아 확인했습니다.
+11:44:40	 From 20205648 Andrés Brito : Thank you
+11:44:42	 From 20185051 SoJung : 재밌었습니다ㅎㅎ감사합니다!
+11:44:42	 From Mario Choi : 최인식입니다
+11:44:43	 From 박성진 20204341 : 감사합니다~~
+11:44:47	 From Mario Choi : 감사합니다~
+11:44:48	 From 이재완(kaist) : 감사합니다~
+11:44:50	 From JunMin Lee : 감사합니다
+11:44:51	 From Rushda Basir : Thankyou
+11:44:53	 From naver : 감사합니다
+11:44:55	 From Jaegyun Kim : Thank you~
+11:44:56	 From 박근철 : 감사합니다
+11:44:57	 From 5500 : 감사합니다

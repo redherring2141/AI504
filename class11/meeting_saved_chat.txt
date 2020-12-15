@@ -1,0 +1,63 @@
+10:33:33	 From 20185051 김소정 : 안녕하세요~
+10:33:36	 From WonhongYoo : 안녕하세요~
+10:33:37	 From 20205648 Andrés Brito : Good morning
+10:33:44	 From Rushda Basir : Good morning!
+10:33:50	 From LSJ : 안녕하세요
+10:34:30	 From Ju Yunsang : 네이버 주윤상입니다
+10:34:52	 From Inhee Kim : 네이버 김인희 입니다
+10:34:57	 From 노윤영 01040394076 : 네이버 노윤영입니다.
+10:35:00	 From WonhongYoo : 네이버 유원홍 입니다
+10:35:04	 From Mario Choi : 네이버 최인식입니다
+10:36:43	 From Jaegyun Kim : 네이버 김재균입니다
+10:36:46	 From 김윤영 : 네이버 김윤영 출석입니다
+10:48:48	 From LSJ : 소프트맥스인데(sum=1) 나눠주는 이유가 무엇인가요?
+10:49:17	 From LSJ : 아, 네 감사합니다.
+10:53:58	 From Jaegyun Kim : 그런 관점(parallel로 하는 게좋다!)이라면 softmax는 왜 가만히 납뒀을까요? softmax도 O(N)아닌가요?
+10:55:23	 From Jaegyun Kim : 아 감사합니다
+10:57:39	 From LSJ : loss 를 어떻게 정해야 self attn.이 학습될 수 있는 것인가요?
+11:00:06	 From LSJ : 네, 감사합니다.
+11:03:23	 From 20203498 이재훈 : 같은 input 에 대해서 다른 attention map 을 어떻게 얻을 수 있는것인가요~?
+11:05:32	 From 20203498 이재훈 : 네 감사합니다~.
+11:09:55	 From 20203210_Jiyoon_Myung : layer와 head가 어떻게 다른건가요?
+11:18:42	 From Jaegyun Kim : input들끼리 같은 feed forward를 공유하는 거라고 하지 않으셨나요? 왜 그림은 다르게 그린걸까요?
+11:19:49	 From LSJ : batch norm.을 적용할 수 없는 것 맞나요? (하려해도)
+11:20:05	 From Rushda Basir : What is the significance of skip connection?
+11:20:06	 From Jaegyun Kim : 네 감사합니다.
+11:20:41	 From LSJ : 한문장에 대해 인코더 돌리는 거면 batch norm.이 어떻게 적용될 수 있는지요?
+11:22:22	 From Jaegyun Kim : NLP에는 이미지보다 input에 다양성이 적어서 batch norm이 크게 영향 없지 않을까요?
+11:22:31	 From LSJ : 네, 감사합니다.
+11:23:30	 From Jisu Jeon : 네이버 전지수 출석합니다. 늦어서 죄송합니다 급한 미팅이 있어서요
+11:23:57	 From 정윤진 : 앗...네이버 정윤진도 출석했습니다. 20분정도 늦었었어요
+11:30:40	 From 20185051 SoJung : 마지막이 왜 0.98이 아닌건가요?
+11:31:51	 From 20185051 SoJung : 넵, 감사합니다
+11:52:42	 From LSJ : 지난시간에, 확률 최대값으로 하면 똑같은 번역만 나와서 샘플링한다고 들었는데 여기서는 확률 최대값으로 결정하는 것인가요?
+11:53:22	 From LSJ : 네, 감사합니다.
+11:53:46	 From Jaegyun Kim : 서로 다른 layer의 decoder에서 french의 Wk, Wv는 하나로 이용되나요? 아니면 layer마다 Wk, Wv가 다르게 정의되나요?
+11:54:04	 From Jaegyun Kim : query들이 달라져서 달라져야할꺼 같아 보이긴하는데요..
+11:55:04	 From Jaegyun Kim : 네 감사합니다
+12:03:56	 From LSJ : decoder에서 raw attention weights가 완성될 수 없는 것 아닌가요? (뒤 단어는 아직 나오기 전이라)
+12:05:02	 From 20204225 강정모 : Raw attention weight 과 mask는 element-wise 인가요 아니면 그냥 mat mul인가요?
+12:05:16	 From LSJ : test 시에는
+12:05:18	 From LSJ : ?
+12:05:47	 From LSJ : 그때는 auto-attn.을 나온 것 까지만 이용하나요?
+12:05:48	 From 20204225 강정모 : 아 감사합니다
+12:08:40	 From LSJ : 네, 감사합니다.
+12:08:45	 From 박성진_20204341 : test시에 encoder단어수만큼 for loop돌리는건가요 아니면 <end> 나올떄까지 돌리나요?
+12:09:15	 From 20203498 이재훈 : test 시에도 masked attention 은 그대로 놔두는것이죠~?
+12:09:33	 From 박성진_20204341 : 아 decoder에서요~
+12:09:42	 From 박성진_20204341 : decoder에서의 질문이었습니다.
+12:09:51	 From 박성진_20204341 : 아하 감사합니다!
+12:09:55	 From LSJ : RNN과 달리 트랜스포머에서 max seq. length가 정해져야 하는 것에 대해 한번 더 설명해 주실 수 있을까요?
+12:09:55	 From 20203498 이재훈 : 감사합니다~
+12:11:11	 From Inhee Kim : 테스트시에 GT를 넣는데도 decoder에서 loop를 돌려야 하나요?
+12:11:27	 From LSJ : 아~ 네, 감사합니다.
+12:11:42	 From Inhee Kim : train 시에요
+12:11:53	 From Inhee Kim : 네
+12:11:55	 From 20203498 이재훈 : 그럼 토큰의 길이가 모델의 capa 보다 긴 문장의 번역을 하게되면 번역의 품질이 떨어질수밖에 없는것인가요~?
+12:12:43	 From 20203498 이재훈 : 넵 감사합니다
+12:13:05	 From 20203498 이재훈 : 현재 구글 번역기에서 쓰는게 이런 트랜스포머 기반인가요~?
+12:13:53	 From 20203498 이재훈 : 아 넵 감사합니다~.
+12:15:17	 From 20205648 Andrés Brito : Thank you
+12:15:17	 From WonhongYoo : 감사합니다~
+12:15:18	 From 20204225 강정모 : 감사합니다
+12:15:24	 From 20208076 Kyunghwan sohn : 감사합니다~

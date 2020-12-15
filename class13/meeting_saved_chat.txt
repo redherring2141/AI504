@@ -1,0 +1,48 @@
+10:53:34	 From 20185051 SoJung : 안녕하세요~
+10:53:38	 From 20205648 Andrés Brito : Good morning
+10:53:49	 From Rushda Basir : Good Morning!
+10:54:23	 From 김인희 : 안녕하세요. 네이버 김인희 입니다.
+10:54:26	 From Jaegyun Kim : 네이버 김재균입니다
+10:54:28	 From 김윤영 : 네이버 김윤영입니다
+10:54:28	 From Mario Choi : 네이버 최인식입니다
+10:54:40	 From Jisu Jeon : 안녕하세요, 네이버 전지수 입니다
+10:54:58	 From Wonhong Yoo : 네이버 유원홍 입니다
+10:54:59	 From Yonghee Kim : 네이버 김용희입니다
+10:55:06	 From Ju Yunsang : 네이버 주윤상입니다
+10:55:11	 From 20205342 조성윤 : 안녕하세요~
+10:57:17	 From 노윤영 4076 : 네이버 노윤영 출석합니다
+11:13:26	 From 20205470_soyeon kim : 3D grid도 가능한가요?
+11:14:41	 From Jaegyun Kim : compound 설계에도 적용이 된다고 하셨는데요, labeling이 되어있는 데이터들이 많이 있나요? supervised이던 unsupervised이던 모델 디자인이 어려울꺼 같아서요
+11:15:32	 From Jaegyun Kim : 감사합니다
+11:19:47	 From (Will)mer Quiñones : the nodes of the graph don't have to be same data type, right? e.g. a image (node1) can be connected to some textual context (node2)?
+11:31:09	 From Jaegyun Kim : no
+11:31:12	 From JunMin Lee : No we need to combine
+11:39:28	 From 20185051 SoJung : diagonal term만 있으면 self node가 몇개인지 구분할 수 없게 되는건가요?
+11:40:13	 From 20185051 SoJung : 스스로 참조하는거요
+11:40:21	 From 20185051 SoJung : 뭐라고 표현하는지 몰라서..
+11:40:43	 From 20185051 SoJung : self loop가 3,4개인거랑 1개인건 차이가 없나요?
+11:40:56	 From 20185051 SoJung : 네네
+11:40:57	 From 20185051 SoJung : 아
+11:41:06	 From 20185051 SoJung : 넵, 감사합니다
+11:41:22	 From Jisu Jeon : Do we model directed graphs by simply changing A?
+11:45:27	 From Yonghee Kim : Knowledge Base와 같이 labeled edges (i.e. is_a, has_a, is_interested_in, ...)가 있는 경우에 edge representation은 어떻게 하나요?
+11:46:52	 From Yonghee Kim : 아.. 감사합니다!
+11:50:43	 From Jaegyun Kim : W는 embedding matrix라고 말씀주셨는데요, Wk는 어떤 의민가요? Hk-1만 있으면 되는거 아닌가요? Hk-1이 이미 k-1 step의 embedding vertice인거 같은데요..
+11:52:16	 From Jaegyun Kim : 감사합니다
+12:04:18	 From 20205470_soyeon kim : 감사합니다
+12:04:19	 From 20185051 SoJung : 감사합니다~
+12:04:19	 From 20209007 최상범 : Thank you
+12:04:20	 From Rushda Basir : Thankyou!
+12:04:20	 From 20205648 Andrés Brito : Thank you
+12:04:22	 From youngjunchoi : 아까 언급하신, 데이터 타입이 다른 헬스케어 데이터에서도 모두 크기를 같아지도록 normalize하나요?
+12:04:24	 From 이재완(kaist) : 감사합니다
+12:04:25	 From 박성진_20204341 : 감사합니다.
+12:04:28	 From Wonhong Yoo : 감사합니다
+12:05:03	 From 박성진_20204341 : 교수님, 혹시 텀프로젝트는 다다음주쯤 나올 예정인지 대략적인 일정을 알수있을까요?
+12:05:15	 From 박성진_20204341 : 감사합니다.
+12:05:17	 From youngjunchoi : Discrete date와 섞는 건 뭐라고 검색하면 더 찾아볼 수 있을까요?
+12:05:22	 From 20194318 myungchul : Graph conv variation 부분에서 다른 normalization 방법 한 번만 다시 설명해주실 수 있나요?
+12:06:30	 From youngjunchoi : 답변 감사합니다!
+12:08:42	 From 20194318 myungchul : 아하 감사합니다. 실제로 성능적으로 유의미 한가요?
+12:08:59	 From 20194318 myungchul : 감사합니다. ㅎㅎㅎ
+12:09:46	 From 20194318 myungchul : 감사합니다.
